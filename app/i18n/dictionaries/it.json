@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "technology": "Come Funziona",
+    "products": "Soluzioni",
+    "preOrder": "Pre-Ordine",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "defense": "Difesa",
+    "orderNow": "Pre-Ordina"
+  },
+  "hero": {
+    "badge": "Pre-ordini aperti",
+    "title": "Il tuo assistente AI che vede, ascolta e protegge",
+    "subtitle": "Droni + Occhiali AR + Piattaforma AI — un unico ecosistema per i professionisti",
+    "description": "Un assistente personale intelligente che ti aiuta sul campo: sorveglia ambienti, traduce conversazioni in tempo reale e ti mostra le informazioni giuste al momento giusto — direttamente nei tuoi occhiali.",
+    "ctaOrder": "Pre-Ordina Ora →",
+    "ctaTech": "Scopri Come Funziona"
+  },
+  "features": {
+    "title": "Cosa puoi fare con ",
+    "titleHighlight": "SashaTech",
+    "subtitle": "Un ecosistema che risolve problemi reali per professionisti in tutto il mondo.",
+    "silent": {
+      "title": "Sorveglianza Discreta",
+      "desc": "Un drone silenzioso e invisibile che sorveglia senza farsi notare. Ideale per sicurezza, ispezioni e operazioni sensibili."
+    },
+    "thermal": {
+      "title": "Vede Dove Tu Non Puoi",
+      "desc": "Trova persone al buio, attraverso il fumo e la vegetazione. Di giorno e di notte, senza limiti ambientali."
+    },
+    "watch": {
+      "title": "Ore di Autonomia",
+      "desc": "Sorveglia per giorni in modalità stazionaria, o vola per oltre un'ora. Non devi preoccuparti della batteria durante la missione."
+    },
+    "portable": {
+      "title": "Sta in una Tasca",
+      "desc": "Leggero come una penna, si dispiega in secondi. Nessun equipaggiamento di lancio, nessuna preparazione. Pronto quando serve."
+    }
+  },
+  "ecosystem": {
+    "title": "Tre prodotti, ",
+    "titleHighlight": "un ecosistema",
+    "subtitle": "Drone, occhiali e piattaforma AI che lavorano insieme per darti un vantaggio sul campo.",
+    "drone": {
+      "name": "SashaDrone",
+      "tagline": "I tuoi occhi nel cielo",
+      "description": "Un drone tascabile e silenzioso che sorveglia ambienti, trova persone e ispeziona strutture — di giorno e di notte, in qualsiasi condizione meteo.",
+      "specs": "11 configurazioni missione | Progettato e prodotto in UE"
+    },
+    "glasses": {
+      "name": "SashaGlasses",
+      "tagline": "Le informazioni giuste, davanti ai tuoi occhi",
+      "description": "Occhiali dall'aspetto normale che mostrano notifiche, traduzioni e dati critici nel tuo campo visivo. Controllali con gesti naturali o con la lingua dei segni.",
+      "specs": "Batteria tutto il giorno | Indossabili ogni giorno"
+    },
+    "platform": {
+      "name": "SashaPlatform",
+      "tagline": "Il tuo assistente AI personale",
+      "description": "Traduce in 19 lingue in tempo reale, gestisce i tuoi contatti, cattura documenti al volo e ti avvisa dei pericoli — tutto nel rispetto della privacy.",
+      "specs": "11 profili professionali | 19 lingue"
+    },
+    "learnMore": "Scopri di Più →"
+  },
+  "profiles": {
+    "title": "Pensato per ",
+    "titleHighlight": "il tuo lavoro",
+    "subtitle": "Ogni professionista ha esigenze diverse. SashaTech si adatta automaticamente al tuo ruolo.",
+    "categories": {
+      "civilian": "Civile",
+      "govSecurity": "Governo e Sicurezza",
+      "defense": "Difesa"
+    },
+    "general": { "name": "Uso Quotidiano", "desc": "Assistente AI per tutti i giorni: traduzioni, promemoria, cattura documenti" },
+    "tourOperator": { "name": "Tour Operator", "desc": "Gestisci gruppi, comunica in più lingue, tieni traccia dell'itinerario" },
+    "touristGuide": { "name": "Guida Turistica", "desc": "Racconta i luoghi con contesto culturale, traduci per i turisti in tempo reale" },
+    "sales": { "name": "Vendite", "desc": "Tieni traccia dei contatti, gestisci la pipeline, non dimenticare mai un follow-up" },
+    "logistics": { "name": "Logistica", "desc": "Pianifica percorsi, monitora i veicoli, ottimizza le consegne" },
+    "lawEnforcement": { "name": "Forze dell'Ordine", "desc": "Identifica persone, leggi targhe, registra prove con audit trail legale" },
+    "fieldOperator": { "name": "Operatore di Campo", "desc": "Controlla il drone, esegui ispezioni, raccogli dati sul campo" },
+    "securityAgent": { "name": "Agente Sicurezza", "desc": "Sorveglia aree, monitora perimetri, rileva minacce in anticipo" },
+    "compliance": { "name": "Compliance", "desc": "Gestisci GDPR, NIS2, notifica violazioni e consensi in modo automatico" },
+    "emergencyResponder": { "name": "Soccorritore", "desc": "Ricevi allerte di pericolo, trova percorsi di fuga, coordina i soccorsi" },
+    "military": { "name": "Militare", "desc": "Ricognizione, sorveglianza, operazioni silenziose con pieno controllo dell'operatore" }
+  },
+  "press": {
+    "title": "Parlano di noi"
+  },
+  "newsletter": {
+    "title": "Resta aggiornato",
+    "subtitle": "Ricevi le novità su prodotti, disponibilità e prezzi riservati.",
+    "placeholder": "la-tua@email.com",
+    "subscribe": "Iscriviti",
+    "success": "✓ Sei nella lista. Ti terremo aggiornato."
+  },
+  "video": {
+    "cta": "Guarda SashaTech in azione"
+  },
+  "preOrder": {
+    "title": "Pre-Ordina il Tuo SashaDrone",
+    "subtitle": "Riserva la tua unità con un deposito rimborsabile. Spedizioni da Q3 2027.",
+    "selectVariant": "Scegli la Configurazione",
+    "deposit": "Deposito Rimborsabile",
+    "depositAmount": "€250 per unità · Rimborsabile al 100% fino alla spedizione",
+    "reserveNow": "Riserva Ora",
+    "depositLabel": "Deposito",
+    "shipping": "Spedizioni da Q3 2027. Il deposito è rimborsabile al 100% in qualsiasi momento prima della spedizione.",
+    "formFields": {
+      "fullName": "Nome e Cognome",
+      "email": "Email",
+      "country": "Paese",
+      "quantity": "Quantità"
+    },
+    "success": {
+      "title": "Pre-Ordine Ricevuto",
+      "message": "Grazie per il tuo interesse. Ti contatteremo a"
+    }
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "subtitle": "SashaTech è una startup deep-tech italiana che crea strumenti intelligenti per i professionisti che lavorano sul campo.",
+    "missionTitle": "La Nostra Missione",
+    "missionText": "Dare a ogni professionista un assistente AI che vede, ascolta e protegge — ovunque nel mondo, in qualsiasi lingua.",
+    "teamTitle": "Il Team",
+    "teamText": "Un team multidisciplinare con esperienza in aeronautica, intelligenza artificiale, design di prodotto e sicurezza. Sede a Bari, Italia. Produzione 100% europea."
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai domande? Siamo qui per aiutarti.",
+    "formFields": {
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Oggetto",
+      "message": "Messaggio"
+    },
+    "send": "Invia Messaggio",
+    "info": {
+      "email": "info@sashatechnology.com",
+      "location": "Bari, Italia",
+      "response": "Rispondiamo entro 24 ore lavorative"
+    }
+  },
+  "technology": {
+    "title": "Come Funziona",
+    "subtitle": "La tecnologia che rende tutto possibile — senza complicazioni per te.",
+    "propulsion": {
+      "title": "Volo Silenzioso",
+      "desc": "Il drone vola come un insetto: silenzioso e quasi invisibile. Perfetto per sorveglianza discreta e operazioni dove il rumore non è un'opzione."
+    },
+    "thermal": {
+      "title": "Visione Notturna e Oltre",
+      "desc": "Trova persone e oggetti al buio totale, attraverso fumo e vegetazione. Funziona 24/7 in qualsiasi condizione ambientale."
+    },
+    "battery": {
+      "title": "Autonomia Che Conta",
+      "desc": "Giorni di sorveglianza passiva o ore di volo attivo con una singola carica. Batterie europee ad altissima densità energetica."
+    },
+    "stealth": {
+      "title": "Invisibile ai Radar",
+      "desc": "Materiali e gestione radio avanzata rendono il drone praticamente invisibile ai sistemi di rilevamento. Quando serve non essere visti."
+    }
+  },
+  "footer": {
+    "description": "Strumenti intelligenti per professionisti. Progettati e prodotti in Europa.",
+    "products": "Soluzioni",
+    "company": "Azienda",
+    "stayUpdated": "Resta Aggiornato",
+    "stayUpdatedDesc": "Novità su prodotti e disponibilità.",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio",
+    "cookies": "Cookie Policy",
+    "copyright": "© 2026 SashaTech S.r.l.s. Tutti i diritti riservati. Bari, Italia."
+  },
+  "cookie": {
+    "title": "Rispettiamo la tua privacy",
+    "description": "Utilizziamo cookie essenziali per il funzionamento del sito. Con il tuo consenso, potremmo utilizzare anche cookie non essenziali per migliorare l'esperienza.",
+    "accept": "Accetta",
+    "decline": "Rifiuta",
+    "policy": "Cookie Policy"
+  },
+  "common": {
+    "learnMore": "Scopri di Più",
+    "orderNow": "Ordina Ora",
+    "comingSoon": "Prossimamente",
+    "madeInEU": "Progettato e prodotto in Europa"
+  }
+}

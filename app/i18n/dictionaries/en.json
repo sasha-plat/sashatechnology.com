@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "technology": "How It Works",
+    "products": "Solutions",
+    "preOrder": "Pre-Order",
+    "about": "About",
+    "contact": "Contact",
+    "defense": "Defense",
+    "orderNow": "Pre-Order"
+  },
+  "hero": {
+    "badge": "Pre-orders open",
+    "title": "Your AI assistant that sees, listens, and protects",
+    "subtitle": "Drones + AR Glasses + AI Platform — one ecosystem for professionals",
+    "description": "A smart personal assistant that helps you in the field: surveys environments, translates conversations in real time, and shows you the right information at the right moment — directly in your glasses.",
+    "ctaOrder": "Pre-Order Now →",
+    "ctaTech": "See How It Works"
+  },
+  "features": {
+    "title": "What you can do with ",
+    "titleHighlight": "SashaTech",
+    "subtitle": "An ecosystem that solves real problems for professionals around the world.",
+    "silent": {
+      "title": "Discreet Surveillance",
+      "desc": "A silent, invisible drone that surveys without being noticed. Ideal for security, inspections, and sensitive operations."
+    },
+    "thermal": {
+      "title": "Sees Where You Can't",
+      "desc": "Find people in total darkness, through smoke and vegetation. Day and night, with no environmental limits."
+    },
+    "watch": {
+      "title": "Hours of Autonomy",
+      "desc": "Surveys for days in stationary mode, or flies for over an hour. No battery anxiety during your mission."
+    },
+    "portable": {
+      "title": "Fits in Your Pocket",
+      "desc": "Light as a pen, deploys in seconds. No launch equipment, no preparation. Ready when you need it."
+    }
+  },
+  "ecosystem": {
+    "title": "Three products, ",
+    "titleHighlight": "one ecosystem",
+    "subtitle": "Drone, glasses, and AI platform working together to give you an edge in the field.",
+    "drone": {
+      "name": "SashaDrone",
+      "tagline": "Your eyes in the sky",
+      "description": "A pocket-sized, silent drone that surveys environments, finds people, and inspects structures — day and night, in any weather.",
+      "specs": "11 mission configurations | Designed and made in Europe"
+    },
+    "glasses": {
+      "name": "SashaGlasses",
+      "tagline": "The right information, right before your eyes",
+      "description": "Normal-looking glasses that display notifications, translations, and critical data in your field of view. Control them with natural gestures or sign language.",
+      "specs": "All-day battery | Everyday wearable"
+    },
+    "platform": {
+      "name": "SashaPlatform",
+      "tagline": "Your personal AI assistant",
+      "description": "Translates 19 languages in real time, manages your contacts, captures documents on the fly, and alerts you to dangers — all privacy-compliant.",
+      "specs": "11 professional profiles | 19 languages"
+    },
+    "learnMore": "Learn More →"
+  },
+  "profiles": {
+    "title": "Built for ",
+    "titleHighlight": "your job",
+    "subtitle": "Every professional has different needs. SashaTech adapts automatically to your role.",
+    "categories": {
+      "civilian": "Civilian",
+      "govSecurity": "Government & Security",
+      "defense": "Defense"
+    },
+    "general": { "name": "Everyday Use", "desc": "AI assistant for daily tasks: translations, reminders, document capture" },
+    "tourOperator": { "name": "Tour Operator", "desc": "Manage groups, communicate in multiple languages, track itineraries" },
+    "touristGuide": { "name": "Tourist Guide", "desc": "Tell the story of places with cultural context, translate for tourists in real time" },
+    "sales": { "name": "Sales", "desc": "Track contacts, manage your pipeline, never miss a follow-up" },
+    "logistics": { "name": "Logistics", "desc": "Plan routes, monitor vehicles, optimize deliveries" },
+    "lawEnforcement": { "name": "Law Enforcement", "desc": "Identify people, read plates, record evidence with legal audit trail" },
+    "fieldOperator": { "name": "Field Operator", "desc": "Control the drone, run inspections, collect field data" },
+    "securityAgent": { "name": "Security Agent", "desc": "Survey areas, monitor perimeters, detect threats early" },
+    "compliance": { "name": "Compliance", "desc": "Manage GDPR, NIS2, breach notifications, and consent automatically" },
+    "emergencyResponder": { "name": "Emergency Responder", "desc": "Receive danger alerts, find escape routes, coordinate rescue" },
+    "military": { "name": "Military", "desc": "Reconnaissance, surveillance, silent operations with full operator control" }
+  },
+  "press": {
+    "title": "In the press"
+  },
+  "newsletter": {
+    "title": "Stay updated",
+    "subtitle": "Get news on products, availability, and reserved pricing.",
+    "placeholder": "your@email.com",
+    "subscribe": "Subscribe",
+    "success": "✓ You're on the list. We'll keep you posted."
+  },
+  "video": {
+    "cta": "Watch SashaTech in action"
+  },
+  "preOrder": {
+    "title": "Pre-Order Your SashaDrone",
+    "subtitle": "Reserve your unit with a refundable deposit. Shipping from Q3 2027.",
+    "selectVariant": "Choose Your Configuration",
+    "deposit": "Refundable Deposit",
+    "depositAmount": "€250 per unit · 100% refundable until shipping",
+    "reserveNow": "Reserve Now",
+    "depositLabel": "Deposit",
+    "shipping": "Shipping from Q3 2027. Your deposit is 100% refundable at any time before shipment.",
+    "formFields": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "country": "Country",
+      "quantity": "Quantity"
+    },
+    "success": {
+      "title": "Pre-Order Received",
+      "message": "Thank you for your interest. We will contact you at"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "SashaTech is an Italian deep-tech startup building smart tools for professionals who work in the field.",
+    "missionTitle": "Our Mission",
+    "missionText": "Give every professional an AI assistant that sees, listens, and protects — anywhere in the world, in any language.",
+    "teamTitle": "The Team",
+    "teamText": "A multidisciplinary team with expertise in aeronautics, artificial intelligence, product design, and security. Based in Bari, Italy. 100% European manufacturing."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions? We're here to help.",
+    "formFields": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "send": "Send Message",
+    "info": {
+      "email": "info@sashatechnology.com",
+      "location": "Bari, Italy",
+      "response": "We respond within 24 business hours"
+    }
+  },
+  "technology": {
+    "title": "How It Works",
+    "subtitle": "The technology that makes it all possible — without any complexity for you.",
+    "propulsion": {
+      "title": "Silent Flight",
+      "desc": "The drone flies like an insect: silent and nearly invisible. Perfect for discreet surveillance and operations where noise is not an option."
+    },
+    "thermal": {
+      "title": "Night Vision and Beyond",
+      "desc": "Find people and objects in total darkness, through smoke and vegetation. Works 24/7 in any environmental condition."
+    },
+    "battery": {
+      "title": "Autonomy That Matters",
+      "desc": "Days of passive surveillance or hours of active flight on a single charge. Ultra-high energy density European batteries."
+    },
+    "stealth": {
+      "title": "Radar Invisible",
+      "desc": "Advanced materials and radio management make the drone virtually invisible to detection systems. When you need to stay unseen."
+    }
+  },
+  "footer": {
+    "description": "Smart tools for professionals. Designed and manufactured in Europe.",
+    "products": "Solutions",
+    "company": "Company",
+    "stayUpdated": "Stay Updated",
+    "stayUpdatedDesc": "Product news and availability updates.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "copyright": "© 2026 SashaTech S.r.l.s. All rights reserved. Bari, Italy."
+  },
+  "cookie": {
+    "title": "We value your privacy",
+    "description": "We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve your experience.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "policy": "Cookie Policy"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "orderNow": "Order Now",
+    "comingSoon": "Coming Soon",
+    "madeInEU": "Designed and manufactured in Europe"
+  }
+}
