@@ -54,14 +54,13 @@ const technologies = [
     title: "Uncooled Thermal Camera",
     subtitle: "Military-grade thermal in a micro package",
     description:
-      "The B1 Scout carries a 640\u00D7480 uncooled microbolometer with 12\u00B5m pixel pitch and less than 35mK NETD (Noise Equivalent Temperature Difference). European-made, it provides the same thermal sensitivity found in systems 100\u00D7 heavier. A germanium window ensures optimal IR transmission across the 8\u201314\u00B5m LWIR band.",
+      "The B1 Scout carries a high-resolution uncooled thermal camera. European-made, it provides the same thermal sensitivity found in systems 100\u00D7 heavier, enabling detection of people at 200m and vehicles at 500m in complete darkness.",
     specs: [
-      { label: "Resolution", value: "640 \u00D7 480 pixels" },
-      { label: "Pixel Pitch", value: "12\u00B5m" },
-      { label: "NETD", value: "< 35mK" },
-      { label: "Spectral Band", value: "8\u201314\u00B5m LWIR" },
+      { label: "Resolution", value: "High-resolution XGA" },
+      { label: "Sensitivity", value: "Military-grade" },
+      { label: "Spectral Band", value: "LWIR (8\u201314\u00B5m)" },
       { label: "Origin", value: "European manufactured" },
-      { label: "Window", value: "Germanium (Ge)" },
+      { label: "Frame Rate", value: "60 fps" },
     ],
   },
   {

@@ -42,7 +42,7 @@ function ScoutDefensePageInner() {
     { label: "CIM Radio Profiles", value: "8 (FULL/DATA/MESH/BEACON/STEALTH/EMCON/SILENT/BURST-STEALTH)" },
     { label: "SIGINT Exposure (ISR)", value: "8.7%" },
     { label: "EMCON Endurance", value: "86 hours" },
-    { label: "Thermal Sensor", value: "640x480 Uncooled Thermal, 12\u00B5m pitch, <35mK NETD" },
+    { label: "Thermal Sensor", value: "High-resolution uncooled, military-grade sensitivity" },
     { label: "Propulsion", value: "PZT Bimorph + EDF 20mm" },
     { label: "Speed", value: "35 cruise / 90 dash / 80 dive km/h" },
     { label: "Hover Endurance", value: "~56 minutes" },
