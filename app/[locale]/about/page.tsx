@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: "2025", event_it: "SashaTech S.r.l.s. fondata a Bari, Italia", event_en: "SashaTech S.r.l.s. founded in Bari, Italy" },
+  { year: "2026", event_it: "SashaTech S.r.l.s. fondata a Bari, Italia", event_en: "SashaTech S.r.l.s. founded in Bari, Italy" },
   { year: "2026", event_it: "Sviluppo piattaforma, fase prototipale", event_en: "Platform development, prototype phase" },
   { year: "2027", event_it: "Prime spedizioni ai clienti (Q3/Q4)", event_en: "First customer shipments (Q3/Q4)" },
   { year: "2028", event_it: "Linea prodotti completa disponibile", event_en: "Full product line available" },
