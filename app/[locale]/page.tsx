@@ -174,7 +174,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
       {/* EU Manufacturing Banner */}
       <section className="section-container py-16">
         <p className="text-center text-sm text-muted/60">
-          100% designed and manufactured in the European Union
+          {locale === "it" ? "Progettato e prodotto al 100% nell'Unione Europea" : "100% designed and manufactured in the European Union"}
         </p>
       </section>
 

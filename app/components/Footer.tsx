@@ -5,8 +5,38 @@ interface FooterProps {
   locale?: string;
 }
 
+const t = {
+  it: {
+    brand: "Micro-droni biomimetici progettati e prodotti nell'UE. Rendere l'intelligence aerea accessibile.",
+    products: "Prodotti",
+    company: "Azienda",
+    about: "Chi Siamo",
+    technology: "Come Funziona",
+    contact: "Contatti",
+    stayUpdated: "Resta Aggiornato",
+    stayUpdatedDesc: "Ricevi novità su prodotti e disponibilità.",
+    privacy: "Privacy Policy",
+    terms: "Termini di Servizio",
+    cookies: "Cookie Policy",
+  },
+  en: {
+    brand: "Biomimetic micro-drones designed and manufactured in the EU. Making aerial intelligence accessible.",
+    products: "Products",
+    company: "Company",
+    about: "About",
+    technology: "Technology",
+    contact: "Contact",
+    stayUpdated: "Stay Updated",
+    stayUpdatedDesc: "Get product news and availability updates.",
+    privacy: "Privacy Policy",
+    terms: "Terms of Service",
+    cookies: "Cookie Policy",
+  },
+};
+
 export default function Footer({ locale }: FooterProps) {
   const prefix = locale ? `/${locale}` : "";
+  const d = locale === "it" ? t.it : t.en;
 
   return (
     <footer className="bg-navy-light border-t border-white/5">
@@ -22,15 +52,12 @@ export default function Footer({ locale }: FooterProps) {
                 Sasha<span className="text-gold">Tech</span>
               </span>
             </Link>
-            <p className="text-muted text-sm leading-relaxed">
-              Biomimetic micro-drones designed and manufactured in the EU.
-              Making aerial intelligence accessible.
-            </p>
+            <p className="text-muted text-sm leading-relaxed">{d.brand}</p>
           </div>
 
           {/* Products */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Products</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">{d.products}</h4>
             <ul className="space-y-2">
               {["guard", "inspect", "rescue", "agri", "cine"].map((v) => (
                 <li key={v}>
@@ -44,18 +71,18 @@ export default function Footer({ locale }: FooterProps) {
 
           {/* Company */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Company</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">{d.company}</h4>
             <ul className="space-y-2">
-              <li><Link href={`${prefix}/about`} className="text-sm text-muted hover:text-gold transition-colors">About</Link></li>
-              <li><Link href={`${prefix}/technology`} className="text-sm text-muted hover:text-gold transition-colors">Technology</Link></li>
-              <li><Link href={`${prefix}/contact`} className="text-sm text-muted hover:text-gold transition-colors">Contact</Link></li>
+              <li><Link href={`${prefix}/about`} className="text-sm text-muted hover:text-gold transition-colors">{d.about}</Link></li>
+              <li><Link href={`${prefix}/technology`} className="text-sm text-muted hover:text-gold transition-colors">{d.technology}</Link></li>
+              <li><Link href={`${prefix}/contact`} className="text-sm text-muted hover:text-gold transition-colors">{d.contact}</Link></li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">Stay Updated</h4>
-            <p className="text-sm text-muted mb-4">Get launch updates and early access.</p>
+            <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">{d.stayUpdated}</h4>
+            <p className="text-sm text-muted mb-4">{d.stayUpdatedDesc}</p>
             <NewsletterSignup compact />
           </div>
         </div>
@@ -64,12 +91,11 @@ export default function Footer({ locale }: FooterProps) {
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-xs text-muted space-y-1">
             <p>&copy; 2026 SashaTech S.r.l.s. &mdash; Via Bottalico 11, 70124 Bari (BA), Italy</p>
-            <p>P.IVA / VAT: pending registration</p>
           </div>
           <div className="flex gap-6">
-            <Link href={`${prefix}/privacy`} className="text-xs text-muted hover:text-gold transition-colors">Privacy Policy</Link>
-            <Link href={`${prefix}/terms`} className="text-xs text-muted hover:text-gold transition-colors">Terms of Service</Link>
-            <Link href={`${prefix}/cookies`} className="text-xs text-muted hover:text-gold transition-colors">Cookie Policy</Link>
+            <Link href={`${prefix}/privacy`} className="text-xs text-muted hover:text-gold transition-colors">{d.privacy}</Link>
+            <Link href={`${prefix}/terms`} className="text-xs text-muted hover:text-gold transition-colors">{d.terms}</Link>
+            <Link href={`${prefix}/cookies`} className="text-xs text-muted hover:text-gold transition-colors">{d.cookies}</Link>
           </div>
         </div>
       </div>

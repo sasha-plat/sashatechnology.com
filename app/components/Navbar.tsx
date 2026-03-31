@@ -17,11 +17,17 @@ interface NavbarProps {
   locale?: string;
 }
 
+const navT = {
+  it: { home: "Home", technology: "Come Funziona", products: "Prodotti", about: "Chi Siamo", contact: "Contatti", cta: "Contattaci" },
+  en: { home: "Home", technology: "Technology", products: "Products", about: "About", contact: "Contact", cta: "Get in Touch" },
+};
+
 export default function Navbar({ locale }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
 
   const prefix = locale ? `/${locale}` : "";
+  const d = locale === "it" ? navT.it : navT.en;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
@@ -48,10 +54,10 @@ export default function Navbar({ locale }: NavbarProps) {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <Link href={`${prefix}/`} className="text-sm text-muted hover:text-white transition-colors">
-            Home
+            {d.home}
           </Link>
           <Link href={`${prefix}/technology`} className="text-sm text-muted hover:text-white transition-colors">
-            Technology
+            {d.technology}
           </Link>
 
           {/* Products Dropdown */}
@@ -61,7 +67,7 @@ export default function Navbar({ locale }: NavbarProps) {
             onMouseLeave={() => setProductsOpen(false)}
           >
             <button className="text-sm text-muted hover:text-white transition-colors flex items-center gap-1">
-              Products
+              {d.products}
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
@@ -97,7 +103,7 @@ export default function Navbar({ locale }: NavbarProps) {
           href={`${prefix}/contact`}
           className="hidden md:inline-flex items-center gap-2 bg-gold text-navy font-semibold px-5 py-2 rounded-lg hover:bg-gold-light transition-all text-sm"
         >
-          Get in Touch
+          {d.cta}
         </Link>
 
         {/* Mobile Hamburger */}
@@ -123,13 +129,13 @@ export default function Navbar({ locale }: NavbarProps) {
         <div className="md:hidden bg-navy-light border-t border-white/5">
           <div className="px-4 py-4 space-y-3">
             <Link href={`${prefix}/`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>
-              Home
+              {d.home}
             </Link>
             <Link href={`${prefix}/technology`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>
-              Technology
+              {d.technology}
             </Link>
             <div className="border-t border-white/5 pt-2">
-              <p className="text-xs text-muted/60 uppercase tracking-wider mb-2">Products</p>
+              <p className="text-xs text-muted/60 uppercase tracking-wider mb-2">{d.products}</p>
               {variants.map((v) => (
                 <Link
                   key={v.slug}
@@ -155,7 +161,7 @@ export default function Navbar({ locale }: NavbarProps) {
               className="block text-center bg-gold text-navy font-semibold px-5 py-3 rounded-lg mt-3"
               onClick={() => setMobileOpen(false)}
             >
-              Get in Touch
+              {d.cta}
             </Link>
           </div>
         </div>
