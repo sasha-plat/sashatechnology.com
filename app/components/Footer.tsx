@@ -49,7 +49,6 @@ export default function Footer({ locale }: FooterProps) {
               <li><Link href={`${prefix}/about`} className="text-sm text-muted hover:text-gold transition-colors">About</Link></li>
               <li><Link href={`${prefix}/technology`} className="text-sm text-muted hover:text-gold transition-colors">Technology</Link></li>
               <li><Link href={`${prefix}/contact`} className="text-sm text-muted hover:text-gold transition-colors">Contact</Link></li>
-              <li><Link href={`${prefix}/pre-order`} className="text-sm text-muted hover:text-gold transition-colors">Pre-Order</Link></li>
             </ul>
           </div>
 

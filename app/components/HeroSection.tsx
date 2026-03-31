@@ -15,7 +15,7 @@ export default function HeroSection({
   subtitle,
   description,
   ctaText,
-  ctaHref = "/pre-order",
+  ctaHref = "/contact",
   secondaryCta,
   badge,
 }: HeroSectionProps) {

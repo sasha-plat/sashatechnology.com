@@ -88,9 +88,6 @@ export default function Navbar({ locale }: NavbarProps) {
             )}
           </div>
 
-          <Link href={`${prefix}/pre-order`} className="text-sm text-muted hover:text-white transition-colors">
-            Pre-Order
-          </Link>
           <Link href={`${prefix}/about`} className="text-sm text-muted hover:text-white transition-colors">
             About
           </Link>
@@ -103,10 +100,10 @@ export default function Navbar({ locale }: NavbarProps) {
 
         {/* CTA */}
         <Link
-          href={`${prefix}/pre-order`}
+          href={`${prefix}/contact`}
           className="hidden md:inline-flex items-center gap-2 bg-gold text-navy font-semibold px-5 py-2 rounded-lg hover:bg-gold-light transition-all text-sm"
         >
-          Pre-Order
+          Get in Touch
         </Link>
 
         {/* Mobile Hamburger */}
@@ -157,9 +154,6 @@ export default function Navbar({ locale }: NavbarProps) {
                 Defense &rsaquo;
               </Link>
             </div>
-            <Link href={`${prefix}/pre-order`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>
-              Pre-Order
-            </Link>
             <Link href={`${prefix}/about`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>
               About
             </Link>
@@ -170,11 +164,11 @@ export default function Navbar({ locale }: NavbarProps) {
               <LanguageSwitcher />
             </div>
             <Link
-              href={`${prefix}/pre-order`}
+              href={`${prefix}/contact`}
               className="block text-center bg-gold text-navy font-semibold px-5 py-3 rounded-lg mt-3"
               onClick={() => setMobileOpen(false)}
             >
-              Pre-Order Now
+              Get in Touch
             </Link>
           </div>
         </div>

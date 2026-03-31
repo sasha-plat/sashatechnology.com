@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FORM_ENDPOINT } from "./formEndpoint";
 
 interface NewsletterSignupProps {
   compact?: boolean;
@@ -10,25 +11,25 @@ export default function NewsletterSignup({ compact }: NewsletterSignupProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    if (!email || loading) return;
+    setLoading(true);
+    setError(false);
     try {
-      // TODO: Replace XXXXXXXX with your Formspree form ID from https://formspree.io
-      const res = await fetch("https://formspree.io/f/XXXXXXXX", {
+      await fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({ email, _subject: "New subscriber: " + email }),
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: "newsletter", email }),
       });
-      if (res.ok) {
-        setSubmitted(true);
-      } else {
-        setError(true);
-      }
+      setSubmitted(true);
     } catch {
       setError(true);
     }
+    setLoading(false);
   };
 
   if (submitted) {

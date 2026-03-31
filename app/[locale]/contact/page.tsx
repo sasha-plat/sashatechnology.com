@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import HeroSection from "../../components/HeroSection";
+import { FORM_ENDPOINT } from "../../components/formEndpoint";
 
 const subjects = [
   "General Inquiry",
@@ -22,8 +23,22 @@ export default function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "contact",
+          email: formData.email,
+          name: formData.name,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+    } catch { /* fire and forget */ }
     setSubmitted(true);
   };
 
