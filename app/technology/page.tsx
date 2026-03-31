@@ -69,14 +69,12 @@ const technologies = [
     title: "Advanced Battery Technology",
     subtitle: "Ultra-light, high-density energy",
     description:
-      "The B1 Scout uses next-generation silicon-anode lithium cells delivering up to 450 Wh/kg \u2014 nearly double the energy density of conventional Li-Po batteries. At just 1.9g the battery provides over 1,000mAh, enabling flight times that far exceed what a 36g drone would normally achieve. Firmware auto-detects the installed cell and optimises discharge curves accordingly.",
+      "The B1 Scout uses next-generation battery technology delivering nearly double the energy density of conventional drone batteries. This enables flight times that far exceed what a 36g drone would normally achieve. Dual-source European supply chain ensures availability and independence.",
     specs: [
-      { label: "Weight", value: "1.9g" },
-      { label: "Capacity", value: "> 1,000mAh" },
-      { label: "Energy Density", value: "up to 450 Wh/kg" },
-      { label: "Chemistry", value: "Silicon-anode Li-ion" },
+      { label: "Energy Density", value: "Nearly 2\u00D7 conventional Li-Po" },
       { label: "Supply Chain", value: "EU-first, dual-source" },
-      { label: "Smart Management", value: "Auto-detect + profiling" },
+      { label: "Management", value: "Smart auto-detect + profiling" },
+      { label: "Charging", value: "Magnetic pogo dock" },
     ],
   },
   {
