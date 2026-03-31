@@ -19,7 +19,7 @@ const milestones = [
 const values_it = [
   {
     title: "Sovranità Europea",
-    description: "Produciamo interamente in Europa. Nessuna dipendenza da fornitori extra-UE per la tecnologia critica. Esportabile ovunque.",
+    description: "Progettazione e assemblaggio in Europa. Filiera con fornitori europei e alleati NATO.",
   },
   {
     title: "Design Ispirato alla Natura",
@@ -38,7 +38,7 @@ const values_it = [
 const values_en = [
   {
     title: "European Sovereignty",
-    description: "We manufacture entirely in Europe. No dependency on non-EU suppliers for critical technology. Designed and manufactured in the EU.",
+    description: "Design and assembly in Europe. Supply chain with European and NATO-allied suppliers.",
   },
   {
     title: "Nature-Inspired Design",
@@ -161,8 +161,8 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
           </h2>
           <p className="text-muted max-w-lg mx-auto leading-relaxed">
             {isIt
-              ? "SashaTech S.r.l.s. ha sede a Bari, in Puglia. La nostra filiera produttiva coinvolge sei paesi europei, garantendo produzione sovrana e indipendenza tecnologica."
-              : "SashaTech S.r.l.s. is headquartered in Bari, Puglia, in southern Italy. Our supply chain spans six European countries, ensuring sovereign manufacturing and technological independence."}
+              ? "SashaTech S.r.l.s. ha sede a Bari, in Puglia. Progettiamo e assembliamo in Europa con una filiera che coinvolge fornitori europei e alleati."
+              : "SashaTech S.r.l.s. is headquartered in Bari, Puglia, in southern Italy. Our supply chain spans European and allied countries."}
           </p>
           <div className="mt-8">
             <p className="text-sm text-muted">

@@ -163,12 +163,12 @@ export default async function TechnologyPage({ params }: { params: { locale: str
             {isIt ? "Progettato e Prodotto nell'Unione Europea" : "Designed & Manufactured in the European Union"}
           </p>
           <h2 className="text-2xl md:text-4xl font-bold mb-6">
-            {isIt ? "100% Europeo" : "100% European"}
+            {isIt ? "Progettato in UE" : "Designed in EU"}
           </h2>
           <p className="text-muted max-w-2xl mx-auto leading-relaxed">
             {isIt
-              ? "Dalla progettazione alla produzione, tutto avviene in Europa. La nostra filiera produttiva coinvolge sei paesi UE. Nessuna dipendenza da fornitori extra-europei per i componenti critici."
-              : "From design to manufacturing, everything happens in Europe. Our supply chain spans six EU countries. No dependency on non-European suppliers for critical components."}
+              ? "Progettazione e assemblaggio finale in Europa. Filiera con fornitori europei e alleati NATO. Obiettivo: massimizzare il contenuto UE in ogni prodotto."
+              : "Design and final assembly in Europe. Supply chain with European and NATO-allied suppliers. Goal: maximize EU content in every product."}
           </p>
           <div className="flex flex-wrap justify-center gap-8 mt-12">
             {[

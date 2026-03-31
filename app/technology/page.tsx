@@ -165,7 +165,7 @@ export default function TechnologyPage() {
           <p className="text-muted max-w-2xl mx-auto leading-relaxed">
             From PZT ceramics in Germany to thermal sensors in France, PCBs in Belgium,
             and final assembly in Italy \u2014 the B1 Scout is a truly European product.
-            ITAR-free. Export-ready. Sovereign supply chain.
+            ITAR-free design. European and NATO-allied supply chain.
           </p>
           <div className="flex flex-wrap justify-center gap-8 mt-12">
             {[

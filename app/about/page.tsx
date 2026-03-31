@@ -137,7 +137,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-muted max-w-lg mx-auto leading-relaxed">
             SashaTech S.r.l.s. is headquartered in Bari, Puglia, in southern Italy.
-            Our supply chain spans six EU/EEA countries, ensuring sovereign manufacturing
+            Our supply chain spans European and allied countries
             and ITAR-free exports.
           </p>
           <div className="mt-8">
