@@ -86,7 +86,7 @@
   },
   "newsletter": {
     "title": "Stay updated",
-    "subtitle": "Get news on products, availability, and reserved pricing.",
+    "subtitle": "Get news on products and availability.",
     "placeholder": "your@email.com",
     "subscribe": "Subscribe",
     "success": "✓ You're on the list. We'll keep you posted."

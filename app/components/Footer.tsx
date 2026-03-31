@@ -64,7 +64,7 @@ export default function Footer({ locale }: FooterProps) {
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-xs text-muted space-y-1">
             <p>&copy; 2026 SashaTech S.r.l.s. &mdash; Via Bottalico 11, 70124 Bari (BA), Italy</p>
-            <p>P.IVA / VAT: IT08590320728</p>
+            <p>P.IVA / VAT: pending registration</p>
           </div>
           <div className="flex gap-6">
             <Link href={`${prefix}/privacy`} className="text-xs text-muted hover:text-gold transition-colors">Privacy Policy</Link>

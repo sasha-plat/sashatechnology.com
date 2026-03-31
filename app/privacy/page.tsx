@@ -12,7 +12,7 @@ export default function PrivacyPage() {
 
         <p><strong>Last updated:</strong> March 31, 2026</p>
 
-        <p>SashaTech S.r.l.s. (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), with registered office at Via Bottalico 11, 70124 Bari (BA), Italy, VAT IT08590320728, is the data controller for personal data collected through this website (www.sashatechnology.com).</p>
+        <p>SashaTech S.r.l.s. (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;), with registered office at Via Bottalico 11, 70124 Bari (BA), Italy, VAT pending registration, is the data controller for personal data collected through this website (www.sashatechnology.com).</p>
 
         <h2 className="text-lg font-semibold text-white mt-8">1. Data We Collect</h2>
         <p>We collect personal data only when you voluntarily provide it:</p>

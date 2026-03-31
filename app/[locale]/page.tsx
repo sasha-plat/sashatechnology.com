@@ -6,14 +6,6 @@ import FeatureCard from "../components/FeatureCard";
 import NewsletterSignup from "../components/NewsletterSignup";
 import ScrollReveal from "../components/ScrollReveal";
 
-const pressLogos = [
-  "TechCrunch",
-  "Wired",
-  "IEEE Spectrum",
-  "Defense One",
-  "The Verge",
-  "Ars Technica",
-];
 
 export default async function Home({ params }: { params: { locale: string } }) {
   const locale = params.locale as Locale;

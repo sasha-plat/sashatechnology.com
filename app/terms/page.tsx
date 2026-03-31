@@ -13,7 +13,7 @@ export default function TermsPage() {
         <p><strong>Last updated:</strong> March 31, 2026</p>
 
         <h2 className="text-lg font-semibold text-white mt-8">1. General</h2>
-        <p>This website is operated by SashaTech S.r.l.s., Via Bottalico 11, 70124 Bari (BA), Italy, VAT IT08590320728. By accessing this website, you agree to these terms.</p>
+        <p>This website is operated by SashaTech S.r.l.s., Via Bottalico 11, 70124 Bari (BA), Italy, VAT pending registration. By accessing this website, you agree to these terms.</p>
 
         <h2 className="text-lg font-semibold text-white mt-8">2. Informational Purpose</h2>
         <p>This website is provided for informational purposes only. All product descriptions, specifications, images, and performance data are preliminary and subject to change without notice. Nothing on this website constitutes a binding offer to sell or a contract.</p>
