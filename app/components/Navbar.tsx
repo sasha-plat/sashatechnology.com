@@ -27,7 +27,9 @@ export default function Navbar({ locale }: NavbarProps) {
     <nav className="fixed top-0 left-0 right-0 z-50">
       {/* In Progress Banner */}
       <div className="bg-gold/90 text-navy text-center text-xs font-semibold py-1 tracking-wide">
-        Website under construction &mdash; Product specifications are preliminary
+        {locale === "it"
+          ? "Sito in costruzione \u2014 Le specifiche prodotto sono preliminari"
+          : "Website under construction \u2014 Product specifications are preliminary"}
       </div>
       <div className="bg-navy/80 backdrop-blur-xl border-b border-white/5">
       <div className="section-container flex items-center justify-between h-16">
