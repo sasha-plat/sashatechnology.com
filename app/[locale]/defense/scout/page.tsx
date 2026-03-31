@@ -37,7 +37,7 @@ function ScoutDefensePageInner() {
 
   const specs = [
     { label: "Designation", value: "B1 Scout ISR" },
-    { label: "AUW", value: "36.1g (with stealth coatings)" },
+    { label: "AUW", value: "70g (with stealth coatings)" },
     { label: "Stealth Score", value: "9.0/10 (COMSOL validated)" },
     { label: "CIM Radio Profiles", value: "8 (FULL/DATA/MESH/BEACON/STEALTH/EMCON/SILENT/BURST-STEALTH)" },
     { label: "SIGINT Exposure (ISR)", value: "8.7%" },
@@ -45,8 +45,8 @@ function ScoutDefensePageInner() {
     { label: "Thermal Sensor", value: "640x480 Uncooled Thermal, 12\u00B5m pitch, <35mK NETD" },
     { label: "Propulsion", value: "PZT Bimorph + EDF 20mm" },
     { label: "Speed", value: "35 cruise / 90 dash / 80 dive km/h" },
-    { label: "Hover Endurance", value: "45 minutes" },
-    { label: "Cruise Endurance", value: "60 minutes" },
+    { label: "Hover Endurance", value: "~56 minutes" },
+    { label: "Cruise Endurance", value: "~75 minutes" },
     { label: "Range", value: "2 km round-trip" },
     { label: "Noise @ 10m", value: "< 25 dB(A)" },
     { label: "Comms", value: "BLE 5.3 S=8 + LTE-M (burst TX)" },
@@ -66,7 +66,7 @@ function ScoutDefensePageInner() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">B1 Scout ISR</h1>
           <p className="text-muted text-lg max-w-2xl mx-auto">
-            36.1g biomimetic micro-drone with military-grade stealth, 8 communications intelligence
+            70g biomimetic micro-drone with military-grade stealth, 8 communications intelligence
             management profiles, and 86-hour EMCON endurance. Undetectable. Persistent. Sovereign.
           </p>
         </div>

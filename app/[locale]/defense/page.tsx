@@ -41,7 +41,7 @@ function DefensePageInner() {
     {
       name: "B1 Scout ISR",
       href: `${prefix}/defense/scout?access=${ACCESS_KEY}`,
-      description: "36.1g biomimetic ISR micro-drone. Stealth score 9.0/10. 8 CIM radio profiles. 86h EMCON endurance.",
+      description: "70g biomimetic ISR micro-drone. Stealth score 9.0/10. 8 CIM radio profiles. 86h+ EMCON endurance.",
       badge: "ISR",
     },
     {

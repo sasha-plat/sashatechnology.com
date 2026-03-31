@@ -41,7 +41,7 @@ function DardoDefensePageInner() {
     { label: "Liner", value: "Cu, 1.5g" },
     { label: "Penetration", value: "~31mm RHA" },
     { label: "Slug Velocity", value: "2,400 m/s" },
-    { label: "AUW", value: "40g" },
+    { label: "AUW", value: "73.7g" },
     { label: "Endurance (high-density cell)", value: "19.6 min" },
     { label: "Endurance (EU cell)", value: "17 min" },
     { label: "Range", value: "2 km round-trip" },

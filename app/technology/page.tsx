@@ -69,7 +69,7 @@ const technologies = [
     title: "Advanced Battery Technology",
     subtitle: "Ultra-light, high-density energy",
     description:
-      "The B1 Scout uses next-generation battery technology delivering nearly double the energy density of conventional drone batteries. This enables flight times that far exceed what a 36g drone would normally achieve. Dual-source European supply chain ensures availability and independence.",
+      "The B1 Scout uses next-generation battery technology delivering nearly double the energy density of conventional drone batteries. This enables flight times that far exceed what a 70g drone would normally achieve. Dual-source European supply chain ensures availability and independence.",
     specs: [
       { label: "Energy Density", value: "Nearly 2\u00D7 conventional Li-Po" },
       { label: "Supply Chain", value: "EU-first, dual-source" },
