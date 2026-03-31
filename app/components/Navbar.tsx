@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const variants = [
@@ -26,10 +27,15 @@ export default function Navbar({ locale }: NavbarProps) {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-xl border-b border-white/5">
       <div className="section-container flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href={`${prefix}/`} className="flex items-center gap-2">
-          <span className="font-bold text-xl tracking-tight text-red-600">
-            SashaTech
-          </span>
+        <Link href={`${prefix}/`} className="flex items-center">
+          <Image
+            src="/images/logo_red_on_black.png"
+            alt="SashaTech"
+            width={140}
+            height={32}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
