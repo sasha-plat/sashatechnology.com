@@ -42,7 +42,7 @@ function ScoutDefensePageInner() {
     { label: "CIM Radio Profiles", value: "8 (FULL/DATA/MESH/BEACON/STEALTH/EMCON/SILENT/BURST-STEALTH)" },
     { label: "SIGINT Exposure (ISR)", value: "8.7%" },
     { label: "EMCON Endurance", value: "86 hours" },
-    { label: "Thermal Sensor", value: "Lynred ATTO640D-04W (640x480, 12um, <35mK NETD)" },
+    { label: "Thermal Sensor", value: "640x480 Uncooled Thermal, 12\u00B5m pitch, <35mK NETD" },
     { label: "Propulsion", value: "PZT Bimorph + EDF 20mm" },
     { label: "Speed", value: "35 cruise / 90 dash / 80 dive km/h" },
     { label: "Hover Endurance", value: "45 minutes" },
@@ -51,7 +51,7 @@ function ScoutDefensePageInner() {
     { label: "Noise @ 10m", value: "< 25 dB(A)" },
     { label: "Comms", value: "BLE 5.3 S=8 + LTE-M (burst TX)" },
     { label: "Stealth Coatings", value: "RAM MT-30 (DE) + Acktar low-e" },
-    { label: "Security Element", value: "STSAFE-A110 (CC EAL5+)" },
+    { label: "Security Element", value: "Hardware Secure Element (CC EAL5+)" },
     { label: "EU Content", value: "> 90% by cost" },
     { label: "ITAR Status", value: "ITAR-free" },
   ];

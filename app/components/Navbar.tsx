@@ -26,12 +26,9 @@ export default function Navbar({ locale }: NavbarProps) {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-xl border-b border-white/5">
       <div className="section-container flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href={`${prefix}/`} className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gold flex items-center justify-center">
-            <span className="text-navy font-bold text-sm">S</span>
-          </div>
-          <span className="font-bold text-lg tracking-tight">
-            Sasha<span className="text-gold">Tech</span>
+        <Link href={`${prefix}/`} className="flex items-center gap-2">
+          <span className="font-bold text-xl tracking-tight text-red-600">
+            SashaTech
           </span>
         </Link>
 
