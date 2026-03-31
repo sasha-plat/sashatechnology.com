@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 
 const milestones = [
   { year: "2025", event: "Company idea born" },
-  { year: "2026", event: "SashaTech S.r.l.s. founded in Bari, Italy" },
-  { year: "2026", event: "Platform development, prototype phase" },
-  { year: "2027", event: "First product deliveries (target)" },
+  { year: "Q1 2026", event: "SashaTech S.r.l.s. founded in Bari, Italy" },
+  { year: "Q1 2026", event: "SW/HW development at 80%, first simulations" },
+  { year: "Q2 2026", event: "First prototype" },
 ];
 
 const values = [
