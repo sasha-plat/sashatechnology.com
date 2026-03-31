@@ -7,7 +7,7 @@ import { FORM_ENDPOINT } from "../../components/formEndpoint";
 const subjects = [
   "General Inquiry",
   "Product Question",
-  "Pre-Order Support",
+  "Product Inquiry",
   "Partnership",
   "Media / Press",
   "Careers",
@@ -116,6 +116,13 @@ export default function ContactPage() {
                     placeholder="Tell us what you're looking for..."
                   />
                 </div>
+
+                <label className="flex items-start gap-2 text-xs text-muted/70">
+                  <input type="checkbox" required className="mt-0.5 accent-gold" />
+                  <span>I consent to the processing of my data as described in the{" "}
+                    <a href="/privacy" className="underline hover:text-muted">Privacy Policy</a>.
+                  </span>
+                </label>
 
                 <button type="submit" className="btn-primary w-full justify-center">
                   Send Message

@@ -2,18 +2,17 @@
   "nav": {
     "technology": "How It Works",
     "products": "Solutions",
-    "preOrder": "Pre-Order",
     "about": "About",
     "contact": "Contact",
     "defense": "Defense",
-    "orderNow": "Pre-Order"
+    "orderNow": "Get in Touch"
   },
   "hero": {
-    "badge": "Pre-orders open",
+    "badge": "Now in development",
     "title": "Your AI assistant that sees, listens, and protects",
     "subtitle": "Drones + AR Glasses + AI Platform — one ecosystem for professionals",
     "description": "A smart personal assistant that helps you in the field: surveys environments, translates conversations in real time, and shows you the right information at the right moment — directly in your glasses.",
-    "ctaOrder": "Pre-Order Now →",
+    "ctaOrder": "Get in Touch →",
     "ctaTech": "See How It Works"
   },
   "features": {
@@ -95,26 +94,6 @@
   "video": {
     "cta": "Watch SashaTech in action"
   },
-  "preOrder": {
-    "title": "Pre-Order Your SashaDrone",
-    "subtitle": "Reserve your unit with a refundable deposit. Shipping from Q3 2027.",
-    "selectVariant": "Choose Your Configuration",
-    "deposit": "Refundable Deposit",
-    "depositAmount": "€250 per unit · 100% refundable until shipping",
-    "reserveNow": "Reserve Now",
-    "depositLabel": "Deposit",
-    "shipping": "Shipping from Q3 2027. Your deposit is 100% refundable at any time before shipment.",
-    "formFields": {
-      "fullName": "Full Name",
-      "email": "Email",
-      "country": "Country",
-      "quantity": "Quantity"
-    },
-    "success": {
-      "title": "Pre-Order Received",
-      "message": "Thank you for your interest. We will contact you at"
-    }
-  },
   "about": {
     "title": "About Us",
     "subtitle": "SashaTech is an Italian deep-tech startup building smart tools for professionals who work in the field.",
@@ -155,8 +134,8 @@
       "desc": "Days of passive surveillance or hours of active flight on a single charge. Ultra-high energy density European batteries."
     },
     "stealth": {
-      "title": "Radar Invisible",
-      "desc": "Advanced materials and radio management make the drone virtually invisible to detection systems. When you need to stay unseen."
+      "title": "Low Observable Design",
+      "desc": "Advanced materials and radio management make the drone designed to minimize detection signatures. When you need to stay unseen."
     }
   },
   "footer": {
@@ -176,6 +155,10 @@
     "accept": "Accept",
     "decline": "Decline",
     "policy": "Cookie Policy"
+  },
+  "banner": {
+    "construction": "Website under construction — Product specifications are preliminary",
+    "langFallback": ""
   },
   "common": {
     "learnMore": "Learn More",

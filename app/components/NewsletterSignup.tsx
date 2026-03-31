@@ -58,9 +58,15 @@ export default function NewsletterSignup({ compact }: NewsletterSignupProps) {
           className={`bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors text-sm
                      ${compact ? "py-2.5 px-4" : "py-3 px-6"}`}
         >
-          Subscribe
+          {loading ? "..." : "Subscribe"}
         </button>
       </div>
+      {error && <p className="text-red-500 text-xs mt-2">Something went wrong. Please try again.</p>}
+      <p className="text-xs text-muted/60 mt-2">
+        By subscribing you agree to our{" "}
+        <a href="/privacy" className="underline hover:text-muted">Privacy Policy</a>.
+        We only send product updates. Unsubscribe anytime.
+      </p>
     </form>
   );
 }

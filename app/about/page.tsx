@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const milestones = [
   { year: "2024", event: "SashaTech S.r.l.s. founded in Bari, Italy" },
   { year: "2025", event: "B1 Scout concept validated, first PZT flight prototype" },
-  { year: "2026", event: "B1 Scout v3.6.0 platform complete, pre-orders open" },
+  { year: "2026", event: "B1 Scout v4.1 platform complete, prototype phase" },
   { year: "2027", event: "B1 Guard and B1 Inspect shipping (Q3/Q4)" },
   { year: "2028", event: "Full product line available (Agri, Cine variants)" },
 ];

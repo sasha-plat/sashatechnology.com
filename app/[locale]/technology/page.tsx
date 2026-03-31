@@ -89,7 +89,7 @@ const capabilities = [
     description_it:
       "Tutte le comunicazioni tra drone, occhiali e smartphone sono crittografate. Nessun dato viene inviato a server esterni senza il tuo consenso. Privacy e sicurezza sono integrate nel design.",
     description_en:
-      "All communications between drone, glasses, and smartphone are encrypted. No data is sent to external servers without your consent. Privacy and security are built into the design.",
+      "All communications between drone, glasses, and smartphone are encrypted. Your data is handled according to our Privacy Policy. Privacy and security are built into the design.",
     benefits_it: ["Crittografia end-to-end", "Nessun server esterno", "Conforme al GDPR"],
     benefits_en: ["End-to-end encryption", "No external servers", "GDPR compliant"],
   },

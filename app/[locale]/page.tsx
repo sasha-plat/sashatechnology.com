@@ -72,7 +72,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
         subtitle={dict.hero.subtitle}
         description={dict.hero.description}
         ctaText={dict.hero.ctaOrder}
-        ctaHref={`${prefix}/pre-order`}
+        ctaHref={`${prefix}/contact`}
         secondaryCta={{ text: dict.hero.ctaTech, href: `${prefix}/technology` }}
       />
 
@@ -179,24 +179,12 @@ export default async function Home({ params }: { params: { locale: string } }) {
         </ScrollReveal>
       </section>
 
-      {/* Press Logos */}
-      <ScrollReveal animation="fade-in">
-        <section className="section-container py-16">
-          <p className="text-center text-xs text-muted/60 uppercase tracking-widest mb-8">
-            {dict.press.title}
-          </p>
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-            {pressLogos.map((name) => (
-              <div
-                key={name}
-                className="text-muted/30 font-bold text-lg md:text-xl tracking-tight hover:text-muted/50 transition-colors duration-300"
-              >
-                {name}
-              </div>
-            ))}
-          </div>
-        </section>
-      </ScrollReveal>
+      {/* EU Manufacturing Banner */}
+      <section className="section-container py-16">
+        <p className="text-center text-sm text-muted/60">
+          100% designed and manufactured in the European Union
+        </p>
+      </section>
 
       {/* Newsletter */}
       <ScrollReveal animation="fade-up">

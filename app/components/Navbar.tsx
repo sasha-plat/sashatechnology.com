@@ -76,14 +76,6 @@ export default function Navbar({ locale }: NavbarProps) {
                     {v.name}
                   </Link>
                 ))}
-                <div className="border-t border-white/5">
-                  <Link
-                    href={`${prefix}/defense`}
-                    className="block px-4 py-3 text-xs text-muted/60 hover:text-muted hover:bg-white/5 transition-colors"
-                  >
-                    Defense &rsaquo;
-                  </Link>
-                </div>
               </div>
             )}
           </div>
@@ -146,13 +138,6 @@ export default function Navbar({ locale }: NavbarProps) {
                   {v.name}
                 </Link>
               ))}
-              <Link
-                href={`${prefix}/defense`}
-                className="block text-muted/60 hover:text-muted py-1.5 pl-3 text-xs"
-                onClick={() => setMobileOpen(false)}
-              >
-                Defense &rsaquo;
-              </Link>
             </div>
             <Link href={`${prefix}/about`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>
               About

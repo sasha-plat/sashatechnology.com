@@ -23,7 +23,7 @@ const variantData: Record<string, VariantData> = {
   guard: {
     name: "B1 Guard",
     tagline: "86h Silent Guardian",
-    price: "2,500",
+    price: "TBD",
     availability: "Q3 2027",
     description:
       "The B1 Guard is built for continuous perimeter surveillance. With 86 hours of perch-and-stare mode and AI-powered intrusion detection, it replaces traditional camera systems at a fraction of the cost.",
@@ -65,7 +65,7 @@ const variantData: Record<string, VariantData> = {
   inspect: {
     name: "B1 Inspect",
     tagline: "See What Eyes Can't",
-    price: "2,000",
+    price: "TBD",
     availability: "Q4 2027",
     description:
       "Purpose-built for infrastructure inspection, the B1 Inspect uses thermal imaging to detect anomalies invisible to the naked eye. From micro-cracks in bridges to insulation failures in buildings.",
@@ -107,7 +107,7 @@ const variantData: Record<string, VariantData> = {
   rescue: {
     name: "B1 Rescue",
     tagline: "Find. Mark. Save.",
-    price: "2,000",
+    price: "TBD",
     availability: "Q4 2027",
     description:
       "When every second counts, the B1 Rescue deploys in under 10 seconds to locate survivors using thermal imaging. GPS-marks their position and guides rescue teams directly to them.",
@@ -149,7 +149,7 @@ const variantData: Record<string, VariantData> = {
   agri: {
     name: "B1 Agri",
     tagline: "Precision from Above",
-    price: "1,500",
+    price: "TBD",
     availability: "Q1 2028",
     description:
       "The most affordable B1 variant, optimized for agricultural monitoring. NDVI-capable thermal mapping helps farmers detect crop stress, irrigation issues, and pest damage before it spreads.",
@@ -176,7 +176,7 @@ const variantData: Record<string, VariantData> = {
       { label: "Price", value: "\u20AC1,500" },
     ],
     useCases: [
-      { title: "Vineyard Monitoring", description: "Weekly thermal surveys of vineyard blocks detect water stress and optimize irrigation scheduling, improving grape quality and reducing water usage by up to 30%." },
+      { title: "Vineyard Monitoring", description: "Weekly thermal surveys of vineyard blocks detect water stress and optimize irrigation scheduling, improving grape quality and helping optimize water usage." },
       { title: "Greenhouse Inspection", description: "Fly through greenhouse interiors to identify heating system failures, ventilation issues, and localized pest infestations with thermal contrast." },
       { title: "Livestock Monitoring", description: "Thermal detection of livestock in open range, counting animals and identifying individuals showing signs of illness through elevated body temperature." },
     ],
@@ -185,13 +185,13 @@ const variantData: Record<string, VariantData> = {
       { question: "Does it replace satellite imagery?", answer: "It complements satellite data by providing much higher resolution (5.4 cm vs 10m per pixel) and on-demand timing regardless of cloud cover. Ideal for field-level decisions." },
       { question: "Can it detect specific crop diseases?", answer: "Thermal imaging detects temperature anomalies associated with stress, but specific disease identification requires integration with our cloud-based AI analysis platform (included in the first year)." },
       { question: "Is it safe around livestock?", answer: "At < 25 dB(A), the B1 Agri is quieter than ambient farm noise. Field tests show zero disturbance to cattle, sheep, and poultry at 20m altitude." },
-      { question: "What about pesticide spraying?", answer: "The B1 Agri is a monitoring platform, not a sprayer. At 70g it is a monitoring platform, not a carrier. It identifies where to spray, reducing chemical use by up to 40% through targeted application." },
+      { question: "What about pesticide spraying?", answer: "The B1 Agri is a monitoring platform, not a sprayer. At 70g it is a monitoring platform, not a carrier. It identifies where to spray, reducing chemical use through targeted application through targeted application." },
     ],
   },
   cine: {
     name: "B1 Cine",
     tagline: "Silent Eye in the Sky",
-    price: "2,000",
+    price: "TBD",
     availability: "Q1 2028",
     description:
       "Designed for wildlife filmmakers and documentary crews who need aerial footage without disturbing their subjects. Zero noise, thermal night vision, and cinematic flight modes.",
@@ -266,8 +266,8 @@ export default function ProductPage({ params }: { params: { locale: string; vari
         title={`${data.name} \u2014 ${data.tagline}`}
         subtitle={`\u20AC${data.price} | ${data.availability}`}
         description={data.description}
-        ctaText={`Pre-Order ${data.name} \u2192`}
-        ctaHref={`${prefix}/pre-order`}
+        ctaText={`Learn about ${data.name} \u2192`}
+        ctaHref={`${prefix}/contact`}
         secondaryCta={{ text: "View Specs", href: "#specs" }}
       />
 
@@ -328,10 +328,10 @@ export default function ProductPage({ params }: { params: { locale: string; vari
             Ready for the {data.name}?
           </h2>
           <p className="text-muted mb-8 max-w-md mx-auto">
-            Secure your unit with a &euro;250 refundable deposit. Shipping starts {data.availability}.
+            Contact us to learn more about availability.
           </p>
-          <Link href={`${prefix}/pre-order`} className="btn-primary">
-            Pre-Order Now &mdash; &euro;250 Deposit
+          <Link href={`${prefix}/contact`} className="btn-primary">
+            Contact Us
           </Link>
         </div>
       </section>

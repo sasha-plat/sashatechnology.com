@@ -62,13 +62,14 @@ export default function Footer({ locale }: FooterProps) {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted">
-            &copy; 2026 SashaTech S.r.l.s. All rights reserved. Bari, Italy.
-          </p>
+          <div className="text-xs text-muted space-y-1">
+            <p>&copy; 2026 SashaTech S.r.l.s. &mdash; Via Bottalico 11, 70124 Bari (BA), Italy</p>
+            <p>P.IVA / VAT: IT08590320728</p>
+          </div>
           <div className="flex gap-6">
-            <Link href="#" className="text-xs text-muted hover:text-gold transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-xs text-muted hover:text-gold transition-colors">Terms of Service</Link>
-            <Link href="#" className="text-xs text-muted hover:text-gold transition-colors">Cookie Policy</Link>
+            <Link href={`${prefix}/privacy`} className="text-xs text-muted hover:text-gold transition-colors">Privacy Policy</Link>
+            <Link href={`${prefix}/terms`} className="text-xs text-muted hover:text-gold transition-colors">Terms of Service</Link>
+            <Link href={`${prefix}/cookies`} className="text-xs text-muted hover:text-gold transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

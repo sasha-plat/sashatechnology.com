@@ -7,7 +7,7 @@ import { FORM_ENDPOINT } from "../components/formEndpoint";
 const subjects = [
   "General Inquiry",
   "Product Question",
-  "Pre-Order Support",
+  "Product Inquiry",
   "Partnership",
   "Media / Press",
   "Careers",
@@ -117,6 +117,13 @@ export default function ContactPage() {
                   />
                 </div>
 
+                <label className="flex items-start gap-2 text-xs text-muted/70">
+                  <input type="checkbox" required className="mt-0.5 accent-gold" />
+                  <span>I consent to the processing of my data as described in the{" "}
+                    <a href="/privacy" className="underline hover:text-muted">Privacy Policy</a>.
+                  </span>
+                </label>
+
                 <button type="submit" className="btn-primary w-full justify-center">
                   Send Message
                 </button>
@@ -128,8 +135,8 @@ export default function ContactPage() {
           <div className="lg:col-span-2 space-y-6">
             <div className="glass-card">
               <h3 className="font-semibold mb-4">General Inquiries</h3>
-              <a href="mailto:info@sashatech.ai" className="text-gold hover:text-gold-light transition-colors text-sm">
-                info@sashatech.ai
+              <a href="mailto:info@sashatechnology.com" className="text-gold hover:text-gold-light transition-colors text-sm">
+                info@sashatechnology.com
               </a>
               <p className="text-muted text-xs mt-2">
                 Product questions, partnerships, media inquiries.
@@ -139,8 +146,8 @@ export default function ContactPage() {
 
             <div className="glass-card">
               <h3 className="font-semibold mb-4">Defense &amp; Government</h3>
-              <a href="mailto:defense@sashatech.ai" className="text-gold hover:text-gold-light transition-colors text-sm">
-                defense@sashatech.ai
+              <a href="mailto:defense@sashatechnology.com" className="text-gold hover:text-gold-light transition-colors text-sm">
+                defense@sashatechnology.com
               </a>
               <p className="text-muted text-xs mt-2">
                 Defense, law enforcement, and government inquiries.

@@ -2,18 +2,17 @@
   "nav": {
     "technology": "Come Funziona",
     "products": "Soluzioni",
-    "preOrder": "Pre-Ordine",
     "about": "Chi Siamo",
     "contact": "Contatti",
     "defense": "Difesa",
-    "orderNow": "Pre-Ordina"
+    "orderNow": "Contattaci"
   },
   "hero": {
-    "badge": "Pre-ordini aperti",
+    "badge": "In fase di sviluppo",
     "title": "Il tuo assistente AI che vede, ascolta e protegge",
     "subtitle": "Droni + Occhiali AR + Piattaforma AI — un unico ecosistema per i professionisti",
     "description": "Un assistente personale intelligente che ti aiuta sul campo: sorveglia ambienti, traduce conversazioni in tempo reale e ti mostra le informazioni giuste al momento giusto — direttamente nei tuoi occhiali.",
-    "ctaOrder": "Pre-Ordina Ora →",
+    "ctaOrder": "Contattaci →",
     "ctaTech": "Scopri Come Funziona"
   },
   "features": {
@@ -95,26 +94,6 @@
   "video": {
     "cta": "Guarda SashaTech in azione"
   },
-  "preOrder": {
-    "title": "Pre-Ordina il Tuo SashaDrone",
-    "subtitle": "Riserva la tua unità con un deposito rimborsabile. Spedizioni da Q3 2027.",
-    "selectVariant": "Scegli la Configurazione",
-    "deposit": "Deposito Rimborsabile",
-    "depositAmount": "€250 per unità · Rimborsabile al 100% fino alla spedizione",
-    "reserveNow": "Riserva Ora",
-    "depositLabel": "Deposito",
-    "shipping": "Spedizioni da Q3 2027. Il deposito è rimborsabile al 100% in qualsiasi momento prima della spedizione.",
-    "formFields": {
-      "fullName": "Nome e Cognome",
-      "email": "Email",
-      "country": "Paese",
-      "quantity": "Quantità"
-    },
-    "success": {
-      "title": "Pre-Ordine Ricevuto",
-      "message": "Grazie per il tuo interesse. Ti contatteremo a"
-    }
-  },
   "about": {
     "title": "Chi Siamo",
     "subtitle": "SashaTech è una startup deep-tech italiana che crea strumenti intelligenti per i professionisti che lavorano sul campo.",
@@ -155,8 +134,8 @@
       "desc": "Giorni di sorveglianza passiva o ore di volo attivo con una singola carica. Batterie europee ad altissima densità energetica."
     },
     "stealth": {
-      "title": "Invisibile ai Radar",
-      "desc": "Materiali e gestione radio avanzata rendono il drone praticamente invisibile ai sistemi di rilevamento. Quando serve non essere visti."
+      "title": "Design a Bassa Osservabilita",
+      "desc": "Materiali e gestione radio avanzata rendono il drone progettato per minimizzare le firme di rilevamento. Quando serve non essere visti."
     }
   },
   "footer": {
@@ -176,6 +155,10 @@
     "accept": "Accetta",
     "decline": "Rifiuta",
     "policy": "Cookie Policy"
+  },
+  "banner": {
+    "construction": "Sito in costruzione — Le specifiche prodotto sono preliminari",
+    "langFallback": ""
   },
   "common": {
     "learnMore": "Scopri di Più",

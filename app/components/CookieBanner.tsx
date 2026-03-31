@@ -38,7 +38,7 @@ export default function CookieBanner({ locale: _locale }: CookieBannerProps) {
               We use essential cookies to make our site work. With your consent, we may also use
               non-essential cookies to improve user experience. By clicking &quot;Accept&quot;, you
               agree to our use of cookies. See our{" "}
-              <a href="#" className="text-gold hover:underline">Cookie Policy</a> for details.
+              <a href="/cookies" className="text-gold hover:underline">Cookie Policy</a> for details.
             </p>
           </div>
           <div className="flex gap-3 shrink-0">
