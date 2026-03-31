@@ -24,7 +24,12 @@ export default function Navbar({ locale }: NavbarProps) {
   const prefix = locale ? `/${locale}` : "";
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-xl border-b border-white/5">
+    <nav className="fixed top-0 left-0 right-0 z-50">
+      {/* In Progress Banner */}
+      <div className="bg-gold/90 text-navy text-center text-xs font-semibold py-1 tracking-wide">
+        Website under construction &mdash; Product specifications are preliminary
+      </div>
+      <div className="bg-navy/80 backdrop-blur-xl border-b border-white/5">
       <div className="section-container flex items-center justify-between h-16">
         {/* Logo */}
         <Link href={`${prefix}/`} className="flex items-center">
@@ -40,6 +45,9 @@ export default function Navbar({ locale }: NavbarProps) {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
+          <Link href={`${prefix}/`} className="text-sm text-muted hover:text-white transition-colors">
+            Home
+          </Link>
           <Link href={`${prefix}/technology`} className="text-sm text-muted hover:text-white transition-colors">
             Technology
           </Link>
@@ -123,6 +131,9 @@ export default function Navbar({ locale }: NavbarProps) {
       {mobileOpen && (
         <div className="md:hidden bg-navy-light border-t border-white/5">
           <div className="px-4 py-4 space-y-3">
+            <Link href={`${prefix}/`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>
+              Home
+            </Link>
             <Link href={`${prefix}/technology`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>
               Technology
             </Link>
@@ -168,6 +179,7 @@ export default function Navbar({ locale }: NavbarProps) {
           </div>
         </div>
       )}
+      </div>
     </nav>
   );
 }

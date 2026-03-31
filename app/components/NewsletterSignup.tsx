@@ -9,10 +9,26 @@ interface NewsletterSignupProps {
 export default function NewsletterSignup({ compact }: NewsletterSignupProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (!email) return;
+    try {
+      // TODO: Replace XXXXXXXX with your Formspree form ID from https://formspree.io
+      const res = await fetch("https://formspree.io/f/XXXXXXXX", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ email, _subject: "New subscriber: " + email }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    }
   };
 
   if (submitted) {
