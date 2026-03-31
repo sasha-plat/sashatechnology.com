@@ -146,8 +146,8 @@ export default function ContactPage() {
 
             <div className="glass-card">
               <h3 className="font-semibold mb-4">Defense &amp; Government</h3>
-              <a href="mailto:defense@sashatechnology.com" className="text-gold hover:text-gold-light transition-colors text-sm">
-                defense@sashatechnology.com
+              <a href="mailto:info@sashatechnology.com" className="text-gold hover:text-gold-light transition-colors text-sm">
+                info@sashatechnology.com
               </a>
               <p className="text-muted text-xs mt-2">
                 Defense, law enforcement, and government inquiries.
@@ -167,7 +167,7 @@ export default function ContactPage() {
               {/* Map placeholder */}
               <div className="mt-4 aspect-[4/3] bg-navy rounded-xl border border-white/5 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-muted/40 text-xs">Map Placeholder</p>
+                  <p className="text-muted/40 text-xs">  </p>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@
     "products": "Solutions",
     "about": "About",
     "contact": "Contact",
-    "defense": "Defense",
+    "defense": "",
     "orderNow": "Get in Touch"
   },
   "hero": {
@@ -67,7 +67,7 @@
     "categories": {
       "civilian": "Civilian",
       "govSecurity": "Government & Security",
-      "defense": "Defense"
+      "defense": ""
     },
     "general": { "name": "Everyday Use", "desc": "AI assistant for daily tasks: translations, reminders, document capture" },
     "tourOperator": { "name": "Tour Operator", "desc": "Manage groups, communicate in multiple languages, track itineraries" },
@@ -79,7 +79,7 @@
     "securityAgent": { "name": "Security Agent", "desc": "Survey areas, monitor perimeters, detect threats early" },
     "compliance": { "name": "Compliance", "desc": "Manage GDPR, NIS2, breach notifications, and consent automatically" },
     "emergencyResponder": { "name": "Emergency Responder", "desc": "Receive danger alerts, find escape routes, coordinate rescue" },
-    "military": { "name": "Military", "desc": "Reconnaissance, surveillance, silent operations with full operator control" }
+    "military": { "name": "Field Operations", "desc": "Reconnaissance, surveillance, and remote operations with full operator control" }
   },
   "press": {
     "title": "In the press"

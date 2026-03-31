@@ -8,11 +8,9 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: "2024", event: "SashaTech S.r.l.s. founded in Bari, Italy" },
-  { year: "2025", event: "B1 Scout concept validated, first PZT flight prototype" },
-  { year: "2026", event: "B1 Scout v4.1 platform complete, prototype phase" },
-  { year: "2027", event: "B1 Guard and B1 Inspect shipping (Q3/Q4)" },
-  { year: "2028", event: "Full product line available (Agri, Cine variants)" },
+  { year: "2025", event: "SashaTech S.r.l.s. founded in Bari, Italy" },
+  { year: "2026", event: "Platform development, prototype phase" },
+  { year: "2027", event: "First product deliveries (target)" },
 ];
 
 const values = [
@@ -36,9 +34,9 @@ const values = [
 
 const team = [
   { name: "Founder & CEO", role: "Engineering, Architecture, Vision", placeholder: "F" },
-  { name: "CTO", role: "Firmware, Flight Control, PCB Design", placeholder: "C" },
-  { name: "Head of Optics", role: "Thermal Imaging, Computer Vision", placeholder: "O" },
-  { name: "Head of Manufacturing", role: "DFM, Supply Chain, EU Sourcing", placeholder: "M" },
+  { name: "", role: "Firmware, Flight Control, PCB Design", placeholder: "C" },
+  { name: "", role: "Thermal Imaging, Computer Vision", placeholder: "O" },
+  { name: "", role: "DFM, Supply Chain, EU Sourcing", placeholder: "M" },
 ];
 
 export default function AboutPage() {
@@ -97,7 +95,7 @@ export default function AboutPage() {
           ))}
         </div>
         <p className="text-center text-muted text-sm mt-8">
-          We&apos;re hiring. <Link href="/contact" className="text-gold hover:underline">Get in touch</Link>.
+          
         </p>
       </section>
 

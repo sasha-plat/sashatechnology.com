@@ -4,7 +4,7 @@
     "products": "Soluzioni",
     "about": "Chi Siamo",
     "contact": "Contatti",
-    "defense": "Difesa",
+    "defense": "",
     "orderNow": "Contattaci"
   },
   "hero": {
@@ -67,7 +67,7 @@
     "categories": {
       "civilian": "Civile",
       "govSecurity": "Governo e Sicurezza",
-      "defense": "Difesa"
+      "defense": ""
     },
     "general": { "name": "Uso Quotidiano", "desc": "Assistente AI per tutti i giorni: traduzioni, promemoria, cattura documenti" },
     "tourOperator": { "name": "Tour Operator", "desc": "Gestisci gruppi, comunica in più lingue, tieni traccia dell'itinerario" },
@@ -79,7 +79,7 @@
     "securityAgent": { "name": "Agente Sicurezza", "desc": "Sorveglia aree, monitora perimetri, rileva minacce in anticipo" },
     "compliance": { "name": "Compliance", "desc": "Gestisci GDPR, NIS2, notifica violazioni e consensi in modo automatico" },
     "emergencyResponder": { "name": "Soccorritore", "desc": "Ricevi allerte di pericolo, trova percorsi di fuga, coordina i soccorsi" },
-    "military": { "name": "Militare", "desc": "Ricognizione, sorveglianza, operazioni silenziose con pieno controllo dell'operatore" }
+    "military": { "name": "Operazioni sul Campo", "desc": "Ricognizione, sorveglianza e operazioni remote con pieno controllo" }
   },
   "press": {
     "title": "Parlano di noi"

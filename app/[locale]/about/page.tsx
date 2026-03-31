@@ -9,9 +9,8 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: "2024", event_it: "SashaTech S.r.l.s. fondata a Bari, Italia", event_en: "SashaTech S.r.l.s. founded in Bari, Italy" },
-  { year: "2025", event_it: "Primo prototipo funzionante, validazione del concept", event_en: "First working prototype, concept validated" },
-  { year: "2026", event_it: "Piattaforma B1 v4.1 completa, fase prototipale", event_en: "B1 v4.1 platform complete, prototype phase" },
+  { year: "2025", event_it: "SashaTech S.r.l.s. fondata a Bari, Italia", event_en: "SashaTech S.r.l.s. founded in Bari, Italy" },
+  { year: "2026", event_it: "Sviluppo piattaforma, fase prototipale", event_en: "Platform development, prototype phase" },
   { year: "2027", event_it: "Prime spedizioni ai clienti (Q3/Q4)", event_en: "First customer shipments (Q3/Q4)" },
   { year: "2028", event_it: "Linea prodotti completa disponibile", event_en: "Full product line available" },
 ];
@@ -117,9 +116,9 @@ export default function AboutPage({ params }: { params: { locale: string } }) {
               : "Engineers, designers, and researchers with expertise in aeronautics, artificial intelligence, product design, and security. United by the belief that advanced technology should be accessible to all professionals."}
           </p>
           <p className="text-muted text-sm mt-6">
-            {isIt ? "Stiamo assumendo. " : "We're hiring. "}
+            
             <Link href={`${prefix}/contact`} className="text-gold hover:underline">
-              {isIt ? "Contattaci" : "Get in touch"}
+              
             </Link>.
           </p>
         </div>

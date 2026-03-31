@@ -56,9 +56,9 @@ const variantData: Record<string, VariantData> = {
     ],
     faq: [
       { question: "How does perch-and-stare work?", answer: "The B1 Guard lands on any surface, folds its wings, and enters low-power surveillance mode. Its thermal sensor continuously scans for motion. When a target is detected, it can either alert you or take off autonomously to follow." },
-      { question: "What is the detection range?", answer: "The thermal sensor can detect a person at up to 200m in clear conditions, and a vehicle at up to 500m. Performance varies with environmental conditions." },
+      { question: "What is the detection range?", answer: "The thermal sensor can designed to detect a person at up to 200m and a vehicle at up to 500m (design targets, subject to validation). Performance varies with environmental conditions." },
       { question: "How many units do I need for a property?", answer: "For a typical residential property (500-2000 sqm), 2-3 units provide comprehensive coverage. Each unit covers a 120\u00B0 field of view. We provide a coverage planning tool with every order." },
-      { question: "Is it weatherproof?", answer: "The B1 Guard is rated IP54 and can operate in light rain and wind up to 25 km/h. In severe weather, it automatically returns to its charging dock." },
+      { question: "Is it weatherproof?", answer: "The B1 Guard is rated IP54 (target) and can operate in light rain and wind up to 25 km/h. In severe weather, it automatically returns to its charging dock." },
       { question: "How does charging work?", answer: "The magnetic pogo dock charges the B1 Guard in approximately 30 minutes. The dock can be mounted on any flat surface and connects to standard USB-C power." },
     ],
   },
@@ -89,7 +89,7 @@ const variantData: Record<string, VariantData> = {
       { label: "Battery", value: "Ultra-light, high-density" },
       { label: "Charging", value: "Magnetic pogo dock" },
       { label: "Data Output", value: "RTSP stream + microSD" },
-      { label: "Certifications", value: "CE, EASA C0 (pending)" },
+      { label: "Certifications", value: "Target: EASA C0 Open category" },
     ],
     useCases: [
       { title: "Bridge Inspection", description: "Fly under and around bridge structures to detect concrete delamination, rebar corrosion, and bearing deterioration without lane closures or scaffolding." },
@@ -125,12 +125,12 @@ const variantData: Record<string, VariantData> = {
       { label: "Thermal Sensor", value: "High-resolution uncooled thermal" },
       { label: "Thermal Resolution", value: "640 \u00D7 480 @ 12\u00B5m" },
       { label: "Person Detection", value: "AI on-device, < 200ms" },
-      { label: "Detection Range", value: "200m (person)" },
+      { label: "Detection Range", value: "200m (design target)" },
       { label: "GPS Accuracy", value: "\u00B1 1.5m CEP" },
       { label: "Speed", value: "35 km/h cruise / 90 km/h dash" },
       { label: "Range", value: "2 km round-trip" },
       { label: "Comms", value: "BLE 5.3 + LTE-M mesh" },
-      { label: "Water Resistance", value: "IP54" },
+      { label: "Water Resistance", value: "IP54 (target)" },
       { label: "Operating Temp", value: "-10\u00B0C to +50\u00B0C" },
     ],
     useCases: [
@@ -140,8 +140,8 @@ const variantData: Record<string, VariantData> = {
     ],
     faq: [
       { question: "Can it see through rubble?", answer: "Thermal imaging cannot penetrate solid materials, but it detects residual heat signatures on surfaces. In earthquake scenarios, body heat often conducts through thin rubble layers, making detection possible up to 30cm of loose debris." },
-      { question: "How many can work together?", answer: "Up to 8 B1 Rescue units can operate in a coordinated mesh, dividing a search area automatically and sharing findings in real-time. No central controller required." },
-      { question: "Does it work in rain?", answer: "The B1 Rescue is IP54 rated and operates in light to moderate rain. Heavy rain degrades thermal performance slightly but the unit remains flight-capable." },
+      { question: "How many can work together?", answer: "The platform is designed to support coordinated mesh operations, dividing a search area automatically and sharing findings in real-time. No central controller required." },
+      { question: "Does it work in rain?", answer: "The B1 Rescue is IP54 (target) rated and operates in light to moderate rain. Heavy rain degrades thermal performance slightly but the unit remains flight-capable." },
       { question: "What happens when battery is low?", answer: "At 15% battery, the B1 Rescue enters return-to-operator mode automatically. It will mark its last known scan position so another unit can continue the search." },
       { question: "Is it approved for emergency services?", answer: "We are working with EU emergency services on certification. The B1 Rescue is designed to comply with EASA C0 regulations for sub-250g drones." },
     ],
@@ -173,7 +173,7 @@ const variantData: Record<string, VariantData> = {
       { label: "Charging", value: "Magnetic pogo dock (solar-compatible)" },
       { label: "Data Output", value: "GeoTIFF + CSV" },
       { label: "Noise @ 10m", value: "< 25 dB(A)" },
-      { label: "Price", value: "\u20AC1,500" },
+      
     ],
     useCases: [
       { title: "Vineyard Monitoring", description: "Weekly thermal surveys of vineyard blocks detect water stress and optimize irrigation scheduling, improving grape quality and helping optimize water usage." },
@@ -184,8 +184,8 @@ const variantData: Record<string, VariantData> = {
       { question: "How much area can it cover?", answer: "At cruise speed, the B1 Agri covers approximately 10 hectares per flight at 30m altitude. For larger farms, the magnetic pogo dock supports solar-powered recharging for fully autonomous daily surveys." },
       { question: "Does it replace satellite imagery?", answer: "It complements satellite data by providing much higher resolution (5.4 cm vs 10m per pixel) and on-demand timing regardless of cloud cover. Ideal for field-level decisions." },
       { question: "Can it detect specific crop diseases?", answer: "Thermal imaging detects temperature anomalies associated with stress, but specific disease identification requires integration with our cloud-based AI analysis platform (included in the first year)." },
-      { question: "Is it safe around livestock?", answer: "At < 25 dB(A), the B1 Agri is quieter than ambient farm noise. Field tests show zero disturbance to cattle, sheep, and poultry at 20m altitude." },
-      { question: "What about pesticide spraying?", answer: "The B1 Agri is a monitoring platform, not a sprayer. At 70g it is a monitoring platform, not a carrier. It identifies where to spray, reducing chemical use through targeted application through targeted application." },
+      { question: "Is it safe around livestock?", answer: "At < 25 dB(A), the B1 Agri is quieter than ambient farm noise. Design targets zero disturbance to cattle, sheep, and poultry at 20m altitude." },
+      { question: "What about pesticide spraying?", answer: "The B1 Agri is a monitoring platform, not a sprayer. At 70g it is a monitoring platform, not a carrier. It identifies where to spray, reducing chemical use through targeted application." },
     ],
   },
   cine: {
@@ -224,7 +224,7 @@ const variantData: Record<string, VariantData> = {
     ],
     faq: [
       { question: "What video quality can I expect?", answer: "The thermal sensor outputs high-resolution video at 60fps. The visible light camera streams 1080p. Both feeds can be recorded simultaneously to microSD with metadata overlay." },
-      { question: "Can animals hear it?", answer: "At operating altitude (20m+), the B1 Cine produces less than 20 dB(A), which is below the hearing threshold of most mammals and well below the alert threshold of birds." },
+      { question: "Can animals hear it?", answer: "At operating altitude (20m+), the B1 Cine is designed to produce minimal noise at operating altitude and well below the alert threshold of birds." },
       { question: "How does it handle wind?", answer: "The B1 Cine maintains stable flight in winds up to 20 km/h. Built-in wind compensation uses IMU data to smooth footage automatically. Above 25 km/h, it returns to operator." },
       { question: "Can I use it commercially?", answer: "Under EASA C0 (pending), sub-250g drones can be used commercially in the Open category in most EU countries. Check local regulations for specific filming permits that may be required." },
       { question: "What editing software supports the output?", answer: "Thermal TIFF sequences are compatible with DaVinci Resolve, Adobe Premiere Pro, and Final Cut Pro. We provide a free plugin for thermal color grading and overlay effects." },
