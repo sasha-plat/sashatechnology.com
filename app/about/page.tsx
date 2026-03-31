@@ -17,7 +17,7 @@ const milestones = [
 const values = [
   {
     title: "European Sovereignty",
-    description: "90%+ EU components. ITAR-free. We believe critical technology should be built where it's used.",
+    description: "European design. Allied supply chain. We believe critical technology should be built where it's used.",
   },
   {
     title: "Biomimetic Design",

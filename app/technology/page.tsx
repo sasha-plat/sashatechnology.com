@@ -81,11 +81,11 @@ const technologies = [
     title: "4-Layer PCB Miniaturization",
     subtitle: "European manufacturing, maximum density",
     description:
-      "All electronics are integrated onto a single 4-layer PCB manufactured in Europe. The board hosts a 480MHz flight controller, multi-protocol wireless SoC (BLE 5.3 + WiFi 6), hardware security element (CC EAL5+), power management, and sensor interfaces \u2014 all in a footprint smaller than a postage stamp. European and allied supply chain.",
+      "All electronics are integrated onto a single 4-layer PCB manufactured in Europe. The board hosts a 480MHz flight controller, multi-protocol wireless SoC (BLE 6.0 + WiFi 6), hardware security element (CC EAL5+), power management, and sensor interfaces \u2014 all in a footprint smaller than a postage stamp. Design and assembly in Europe, components from allied countries.",
     specs: [
       { label: "Layers", value: "4-layer FR4" },
-      { label: "Flight Controller", value: "480MHz ARM Cortex-M7" },
-      { label: "Connectivity", value: "BLE 5.3 + WiFi 6 + LoRa" },
+      { label: "Flight Controller", value: "ARM Cortex-M55 + NPU" },
+      { label: "Connectivity", value: "BLE 6.0 + WiFi 6 + LoRa" },
       { label: "Security", value: "Hardware secure element (CC EAL5+)" },
       { label: "Manufacturing", value: "European PCB fabrication" },
       { label: "EU Content", value: "> 90% by cost" },
@@ -98,8 +98,8 @@ export default function TechnologyPage() {
     <>
       <HeroSection
         title="Technology"
-        subtitle="Six breakthroughs in 36 grams"
-        description="Every component of the B1 Scout represents a departure from conventional drone design. No rotors. No noise. No compromise."
+        subtitle="Six breakthroughs in 70 grams"
+        description="Every component of the B1 Scout represents a departure from conventional drone design. Silent propulsion. Biomimetic design. No compromise."
       />
 
       <div className="section-container pb-20">
@@ -160,7 +160,7 @@ export default function TechnologyPage() {
             Designed &amp; Manufactured in the European Union
           </p>
           <h2 className="text-2xl md:text-4xl font-bold mb-6">
-            European Supply Chain
+            Supply Chain
           </h2>
           <p className="text-muted max-w-2xl mx-auto leading-relaxed">
             From PZT ceramics in Germany to thermal sensors in France, PCBs in Belgium,

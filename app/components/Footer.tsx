@@ -20,7 +20,7 @@ const t = {
     cookies: "Cookie Policy",
   },
   en: {
-    brand: "Biomimetic micro-drones designed and manufactured in the EU. Making aerial intelligence accessible.",
+    brand: "Biomimetic micro-drones designed in Europe. Making aerial intelligence accessible.",
     products: "Products",
     company: "Company",
     about: "About",

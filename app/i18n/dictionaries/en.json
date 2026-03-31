@@ -21,15 +21,15 @@
     "subtitle": "An ecosystem that solves real problems for professionals around the world.",
     "silent": {
       "title": "Discreet Surveillance",
-      "desc": "A silent, invisible drone that surveys without being noticed. Ideal for security, inspections, and sensitive operations."
+      "desc": "A near-silent, hard-to-detect drone that surveys without being noticed. Ideal for security, inspections, and sensitive operations."
     },
     "thermal": {
       "title": "Sees Where You Can't",
-      "desc": "Find people in total darkness, through smoke and vegetation. Day and night, with no environmental limits."
+      "desc": "Find people in total darkness, through smoke and vegetation. Day and night, in most conditions."
     },
     "watch": {
       "title": "Hours of Autonomy",
-      "desc": "Surveys for days in stationary mode, or flies for over an hour. No battery anxiety during your mission."
+      "desc": "Surveys for days in stationary mode, or flies for nearly an hour. No battery anxiety during your mission."
     },
     "portable": {
       "title": "Fits in Your Pocket",
@@ -131,7 +131,7 @@
     },
     "battery": {
       "title": "Autonomy That Matters",
-      "desc": "Days of passive surveillance or hours of active flight on a single charge. Ultra-high energy density European batteries."
+      "desc": "Days of passive surveillance or hours of active flight on a single charge. Next-generation high energy density batteries."
     },
     "stealth": {
       "title": "Low Observable Design",

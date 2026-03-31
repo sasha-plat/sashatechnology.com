@@ -21,15 +21,15 @@
     "subtitle": "Un ecosistema che risolve problemi reali per professionisti in tutto il mondo.",
     "silent": {
       "title": "Sorveglianza Discreta",
-      "desc": "Un drone silenzioso e invisibile che sorveglia senza farsi notare. Ideale per sicurezza, ispezioni e operazioni sensibili."
+      "desc": "Un drone quasi silenzioso e difficile da rilevare che sorveglia senza farsi notare. Ideale per sicurezza, ispezioni e operazioni sensibili."
     },
     "thermal": {
       "title": "Vede Dove Tu Non Puoi",
-      "desc": "Trova persone al buio, attraverso il fumo e la vegetazione. Di giorno e di notte, senza limiti ambientali."
+      "desc": "Trova persone al buio, attraverso il fumo e la vegetazione. Di giorno e di notte, nella maggior parte delle condizioni."
     },
     "watch": {
       "title": "Ore di Autonomia",
-      "desc": "Sorveglia per giorni in modalità stazionaria, o vola per oltre un'ora. Non devi preoccuparti della batteria durante la missione."
+      "desc": "Sorveglia per giorni in modalità stazionaria, o vola per quasi un'ora. Non devi preoccuparti della batteria durante la missione."
     },
     "portable": {
       "title": "Sta in una Tasca",
@@ -131,7 +131,7 @@
     },
     "battery": {
       "title": "Autonomia Che Conta",
-      "desc": "Giorni di sorveglianza passiva o ore di volo attivo con una singola carica. Batterie europee ad altissima densità energetica."
+      "desc": "Giorni di sorveglianza passiva o ore di volo attivo con una singola carica. Batterie di nuova generazione ad altissima densità energetica."
     },
     "stealth": {
       "title": "Design a Bassa Osservabilita",
