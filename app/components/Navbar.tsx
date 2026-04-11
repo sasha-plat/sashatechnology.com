@@ -5,12 +5,48 @@ import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const variants = [
-  { slug: "guard", name: "B1 Guard" },
-  { slug: "inspect", name: "B1 Inspect" },
-  { slug: "rescue", name: "B1 Rescue" },
-  { slug: "agri", name: "B1 Agri" },
-  { slug: "cine", name: "B1 Cine" },
+const productGroups = {
+  it: {
+    drones: "Droni",
+    glasses: "Glasses",
+    software: "Piattaforme SW",
+    accessories: "Accessori",
+  },
+  en: {
+    drones: "Drones",
+    glasses: "Glasses",
+    software: "Software Platforms",
+    accessories: "Accessories",
+  },
+};
+
+type ProductItem = { slug: string; name: string; hasPage: boolean };
+
+const droneProducts: ProductItem[] = [
+  { slug: "guard", name: "B1 Scout — Guard", hasPage: true },
+  { slug: "inspect", name: "B1 Scout — Inspect", hasPage: true },
+  { slug: "rescue", name: "B1 Scout — Rescue", hasPage: true },
+  { slug: "agri", name: "B1 Scout — Agri", hasPage: true },
+  { slug: "cine", name: "B1 Scout — Cine", hasPage: true },
+  { slug: "b2", name: "B2 Platform", hasPage: false },
+  { slug: "m2", name: "M2 Lambda Wing", hasPage: true },
+];
+
+const glassesProducts: ProductItem[] = [
+  { slug: "glasses", name: "SashaGlasses", hasPage: true },
+  { slug: "id", name: "SashaID", hasPage: false },
+];
+
+const softwareProducts: ProductItem[] = [
+  { slug: "platform", name: "SashaPlatform", hasPage: true },
+  { slug: "fleet", name: "SashaFleet", hasPage: false },
+  { slug: "cloud", name: "SashaCloud", hasPage: false },
+  { slug: "studio", name: "SashaStudio", hasPage: false },
+  { slug: "mission-planner", name: "Mission Planner", hasPage: false },
+];
+
+const accessoryProducts: ProductItem[] = [
+  { slug: "pogo-dock", name: "Pogo USB Dock", hasPage: false },
 ];
 
 interface NavbarProps {
@@ -74,15 +110,38 @@ export default function Navbar({ locale }: NavbarProps) {
             </button>
 
             {productsOpen && (
-              <div className="absolute top-full left-0 mt-2 w-48 bg-navy-light border border-white/10 rounded-xl shadow-2xl overflow-hidden">
-                {variants.map((v) => (
-                  <Link
-                    key={v.slug}
-                    href={`${prefix}/products/${v.slug}`}
-                    className="block px-4 py-3 text-sm text-muted hover:text-white hover:bg-white/5 transition-colors"
-                  >
-                    {v.name}
-                  </Link>
+              <div className="absolute top-full left-0 mt-2 w-56 bg-navy-light border border-white/10 rounded-xl shadow-2xl overflow-hidden max-h-[70vh] overflow-y-auto">
+                {([
+                  { key: "drones" as const, items: droneProducts },
+                  { key: "glasses" as const, items: glassesProducts },
+                  { key: "software" as const, items: softwareProducts },
+                  { key: "accessories" as const, items: accessoryProducts },
+                ]).map(({ key, items }, gi) => (
+                  <div key={key}>
+                    {gi > 0 && <div className="border-t border-white/5" />}
+                    <p className="px-4 pt-3 pb-1 text-xs text-gold/60 uppercase tracking-wider">
+                      {locale === "it" ? productGroups.it[key] : productGroups.en[key]}
+                    </p>
+                    {items.map((v) =>
+                      v.hasPage ? (
+                        <Link
+                          key={v.slug}
+                          href={`${prefix}/products/${v.slug}`}
+                          className="block px-4 py-1.5 text-sm text-muted hover:text-white hover:bg-white/5 transition-colors"
+                        >
+                          {v.name}
+                        </Link>
+                      ) : (
+                        <span
+                          key={v.slug}
+                          className="block px-4 py-1.5 text-sm text-muted/40 cursor-default"
+                          title={locale === "it" ? "Prossimamente" : "Coming soon"}
+                        >
+                          {v.name} <span className="text-xs text-muted/30">·</span>
+                        </span>
+                      )
+                    )}
+                  </div>
                 ))}
               </div>
             )}
@@ -135,16 +194,36 @@ export default function Navbar({ locale }: NavbarProps) {
               {d.technology}
             </Link>
             <div className="border-t border-white/5 pt-2">
-              <p className="text-xs text-muted/60 uppercase tracking-wider mb-2">{d.products}</p>
-              {variants.map((v) => (
-                <Link
-                  key={v.slug}
-                  href={`${prefix}/products/${v.slug}`}
-                  className="block text-muted hover:text-white py-1.5 pl-3"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {v.name}
-                </Link>
+              {([
+                { key: "drones" as const, items: droneProducts },
+                { key: "glasses" as const, items: glassesProducts },
+                { key: "software" as const, items: softwareProducts },
+                { key: "accessories" as const, items: accessoryProducts },
+              ]).map(({ key, items }) => (
+                <div key={key} className="mb-2">
+                  <p className="text-xs text-gold/60 uppercase tracking-wider mb-1 mt-2">
+                    {locale === "it" ? productGroups.it[key] : productGroups.en[key]}
+                  </p>
+                  {items.map((v) =>
+                    v.hasPage ? (
+                      <Link
+                        key={v.slug}
+                        href={`${prefix}/products/${v.slug}`}
+                        className="block text-muted hover:text-white py-1.5 pl-3 text-sm"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        {v.name}
+                      </Link>
+                    ) : (
+                      <span
+                        key={v.slug}
+                        className="block text-muted/40 py-1 pl-3 text-sm"
+                      >
+                        {v.name}
+                      </span>
+                    )
+                  )}
+                </div>
               ))}
             </div>
             <Link href={`${prefix}/about`} className="block text-muted hover:text-white py-2" onClick={() => setMobileOpen(false)}>

@@ -19,8 +19,16 @@ export default async function Home({ params }: { params: { locale: string } }) {
     { icon: "✋", title: dict.features.portable.title, description: dict.features.portable.desc },
   ];
 
-  const productSlugs = ["drone", "glasses", "platform"] as const;
-  const products = productSlugs.map((slug) => ({
+  const mainProductSlugs = ["drone", "glasses", "platform", "m2"] as const;
+  const mainProducts = mainProductSlugs.map((slug) => ({
+    slug,
+    name: dict.ecosystem[slug].name,
+    tagline: dict.ecosystem[slug].tagline,
+    description: dict.ecosystem[slug].description,
+    specs: dict.ecosystem[slug].specs,
+  }));
+  const secondaryProductSlugs = ["fleet", "cloud"] as const;
+  const secondaryProducts = secondaryProductSlugs.map((slug) => ({
     slug,
     name: dict.ecosystem[slug].name,
     tagline: dict.ecosystem[slug].tagline,
@@ -125,8 +133,8 @@ export default async function Home({ params }: { params: { locale: string } }) {
             </p>
           </div>
         </ScrollReveal>
-        <ScrollReveal animation="fade-up" stagger={0.2} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {products.map((p) => (
+        <ScrollReveal animation="fade-up" stagger={0.2} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {mainProducts.map((p) => (
             <div key={p.slug} className="glass-card flex flex-col justify-between group hover:border-gold/20 transition-all duration-300">
               <div className="aspect-[4/3] bg-navy rounded-xl mb-5 overflow-hidden relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent group-hover:from-gold/10 transition-all duration-500" />
@@ -136,6 +144,20 @@ export default async function Home({ params }: { params: { locale: string } }) {
                 <p className="text-gold text-sm font-medium mb-3">{p.tagline}</p>
                 <p className="text-muted text-sm leading-relaxed mb-4">{p.description}</p>
                 <p className="font-mono text-xs text-muted/60">{p.specs}</p>
+              </div>
+            </div>
+          ))}
+        </ScrollReveal>
+        <ScrollReveal animation="fade-up" stagger={0.15} className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          {secondaryProducts.map((p) => (
+            <div key={p.slug} className="glass-card flex flex-row items-start gap-5 group hover:border-gold/20 transition-all duration-300">
+              <div className="w-16 h-16 bg-navy rounded-xl flex-shrink-0 overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold mb-1">{p.name}</h3>
+                <p className="text-gold text-xs font-medium mb-2">{p.tagline}</p>
+                <p className="text-muted text-sm leading-relaxed">{p.description}</p>
               </div>
             </div>
           ))}

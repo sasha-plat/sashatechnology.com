@@ -37,9 +37,9 @@
     }
   },
   "ecosystem": {
-    "title": "Tre prodotti, ",
+    "title": "Sei prodotti, ",
     "titleHighlight": "un ecosistema",
-    "subtitle": "Drone, occhiali e piattaforma AI che lavorano insieme per darti un vantaggio sul campo.",
+    "subtitle": "Droni, occhiali, piattaforma AI e servizi cloud che lavorano insieme per darti un vantaggio sul campo.",
     "drone": {
       "name": "SashaDrone",
       "tagline": "I tuoi occhi nel cielo",
@@ -57,6 +57,24 @@
       "tagline": "Il tuo assistente AI personale",
       "description": "Traduce in 19 lingue in tempo reale, gestisce i tuoi contatti, cattura documenti al volo e ti avvisa dei pericoli — tutto nel rispetto della privacy.",
       "specs": "11 profili professionali | 19 lingue"
+    },
+    "m2": {
+      "name": "SashaDrone M2",
+      "tagline": "Copertura a lungo raggio, zero compromessi",
+      "description": "Un drone ad ala fissa che copre centinaia di chilometri in una singola missione. Monitora oleodotti, confini, coste e terreni agricoli in autonomia per ore.",
+      "specs": "4 taglie | Cella a idrogeno | Ore di volo"
+    },
+    "fleet": {
+      "name": "SashaFleet",
+      "tagline": "Gestisci ogni risorsa da un'unica schermata",
+      "description": "Piattaforma di gestione flotte che traccia droni, veicoli e team sul campo in tempo reale. Pianifica missioni, monitora lo stato e rivedi le operazioni.",
+      "specs": "Tracciamento in tempo reale | Pianificazione missioni"
+    },
+    "cloud": {
+      "name": "SashaCloud",
+      "tagline": "La tua AI, nei tuoi locali",
+      "description": "Elaborazione AI on-premise per organizzazioni che necessitano di piena sovranita sui dati. Stesse capacita, nessun dato che lascia la tua rete.",
+      "specs": "Deployment on-premise | Piena sovranita dati"
     },
     "learnMore": "Scopri di Più →"
   },

@@ -37,9 +37,9 @@
     }
   },
   "ecosystem": {
-    "title": "Three products, ",
+    "title": "Six products, ",
     "titleHighlight": "one ecosystem",
-    "subtitle": "Drone, glasses, and AI platform working together to give you an edge in the field.",
+    "subtitle": "Drones, glasses, AI platform, and cloud services working together to give you an edge in the field.",
     "drone": {
       "name": "SashaDrone",
       "tagline": "Your eyes in the sky",
@@ -57,6 +57,24 @@
       "tagline": "Your personal AI assistant",
       "description": "Translates 19 languages in real time, manages your contacts, captures documents on the fly, and alerts you to dangers — all privacy-compliant.",
       "specs": "11 professional profiles | 19 languages"
+    },
+    "m2": {
+      "name": "SashaDrone M2",
+      "tagline": "Long-range coverage, zero compromise",
+      "description": "A fixed-wing drone that covers hundreds of kilometres on a single mission. Monitors pipelines, borders, coastlines, and farmland autonomously for hours.",
+      "specs": "4 sizes | Hydrogen fuel cell | Hours of flight"
+    },
+    "fleet": {
+      "name": "SashaFleet",
+      "tagline": "Manage every asset from one screen",
+      "description": "Fleet management platform that tracks drones, vehicles, and field teams in real time. Plan missions, monitor status, and replay operations.",
+      "specs": "Real-time tracking | Mission planning"
+    },
+    "cloud": {
+      "name": "SashaCloud",
+      "tagline": "Your AI, your premises",
+      "description": "On-premise AI processing for organisations that need full data sovereignty. Same capabilities, zero data leaving your network.",
+      "specs": "On-premise deployment | Full data sovereignty"
     },
     "learnMore": "Learn More →"
   },

@@ -37,6 +37,9 @@ export default function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="5a9e7ded-4d3f-4f6a-999b-d24299e166b7"></script>
+      </head>
       <body className="bg-navy text-white min-h-screen flex flex-col">
         <Navbar locale={locale} />
         <main className="flex-1">{children}</main>

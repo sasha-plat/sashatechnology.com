@@ -7,7 +7,7 @@ interface FooterProps {
 
 const t = {
   it: {
-    brand: "Micro-droni biomimetici progettati e prodotti nell'UE. Rendere l'intelligence aerea accessibile.",
+    brand: "Strumenti intelligenti per professionisti. Droni, occhiali AR e piattaforma AI progettati in Europa.",
     products: "Prodotti",
     company: "Azienda",
     about: "Chi Siamo",
@@ -20,7 +20,7 @@ const t = {
     cookies: "Cookie Policy",
   },
   en: {
-    brand: "Biomimetic micro-drones designed in Europe. Making aerial intelligence accessible.",
+    brand: "Smart tools for professionals. Drones, AR glasses, and AI platform designed in Europe.",
     products: "Products",
     company: "Company",
     about: "About",
@@ -59,10 +59,17 @@ export default function Footer({ locale }: FooterProps) {
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4">{d.products}</h4>
             <ul className="space-y-2">
-              {["guard", "inspect", "rescue", "agri", "cine"].map((v) => (
-                <li key={v}>
-                  <Link href={`${prefix}/products/${v}`} className="text-sm text-muted hover:text-gold transition-colors">
-                    B1 {v.charAt(0).toUpperCase() + v.slice(1)}
+              {[
+                { slug: "guard", label: "B1 Guard" },
+                { slug: "inspect", label: "B1 Inspect" },
+                { slug: "rescue", label: "B1 Rescue" },
+                { slug: "m2", label: "M2 Long-Range" },
+                { slug: "glasses", label: "SashaGlasses" },
+                { slug: "platform", label: "SashaPlatform" },
+              ].map((v) => (
+                <li key={v.slug}>
+                  <Link href={`${prefix}/products/${v.slug}`} className="text-sm text-muted hover:text-gold transition-colors">
+                    {v.label}
                   </Link>
                 </li>
               ))}
