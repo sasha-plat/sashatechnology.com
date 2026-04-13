@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url><loc>https://sashatechnology.com/en</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://sashatechnology.com/it</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- About -->
+  <url><loc>https://sashatechnology.com/en/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/it/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Technology -->
+  <url><loc>https://sashatechnology.com/en/technology</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/it/technology</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Contact -->
+  <url><loc>https://sashatechnology.com/en/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sashatechnology.com/it/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Products - Glasses -->
+  <url><loc>https://sashatechnology.com/en/products/glasses</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/glasses</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Products - M2 -->
+  <url><loc>https://sashatechnology.com/en/products/m2</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/m2</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Products - Platform -->
+  <url><loc>https://sashatechnology.com/en/products/platform</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/platform</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Products - Drone Variants -->
+  <url><loc>https://sashatechnology.com/en/products/guard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/guard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/en/products/inspect</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/inspect</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/en/products/rescue</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/rescue</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/en/products/agri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/agri</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/en/products/cine</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sashatechnology.com/it/products/cine</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Legal -->
+  <url><loc>https://sashatechnology.com/security</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://sashatechnology.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://sashatechnology.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://sashatechnology.com/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
