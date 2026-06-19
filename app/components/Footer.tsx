@@ -66,6 +66,7 @@ export default function Footer({ locale }: FooterProps) {
                 { slug: "m2", label: "M2 Long-Range" },
                 { slug: "glasses", label: "SashaGlasses" },
                 { slug: "platform", label: "SashaPlatform" },
+                { slug: "cloud", label: "SashaCloud" },
               ].map((v) => (
                 <li key={v.slug}>
                   <Link href={`${prefix}/products/${v.slug}`} className="text-sm text-muted hover:text-gold transition-colors">

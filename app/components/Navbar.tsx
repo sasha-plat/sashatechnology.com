@@ -40,7 +40,7 @@ const glassesProducts: ProductItem[] = [
 const softwareProducts: ProductItem[] = [
   { slug: "platform", name: "SashaPlatform", hasPage: true },
   { slug: "fleet", name: "SashaFleet", hasPage: false },
-  { slug: "cloud", name: "SashaCloud", hasPage: false },
+  { slug: "cloud", name: "SashaCloud", hasPage: true },
   { slug: "studio", name: "SashaStudio", hasPage: false },
   { slug: "mission-planner", name: "Mission Planner", hasPage: false },
 ];
