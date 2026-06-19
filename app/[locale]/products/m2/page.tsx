@@ -6,6 +6,7 @@ import SpecsTable from "../../../components/SpecsTable";
 import FeatureCard from "../../../components/FeatureCard";
 import FAQAccordion from "../../../components/FAQAccordion";
 import ScrollReveal from "../../../components/ScrollReveal";
+import ModelViewer from "../../../components/ModelViewer";
 
 const copy = {
   it: {
@@ -16,6 +17,8 @@ const copy = {
       "I droni attuali coprono pochi chilometri e volano per pochi minuti. L'M2 e un UAV ad ala fissa che copre centinaia di chilometri in una singola missione, in completa autonomia. Oleodotti, confini, coste, terreni agricoli: monitorati per ore, non minuti.",
     ctaPrimary: "Contattaci",
     ctaSecondary: "Specifiche Tecniche",
+    model3dTitle: "Modello 3D interattivo",
+    model3dDesc: "Ruota, zooma e osserva il velivolo da ogni angolazione, direttamente nel browser.",
     problemTitle: "Il problema della ",
     problemHighlight: "copertura limitata",
     problemSubtitle: "I droni multirotore non sono progettati per coprire grandi aree.",
@@ -78,6 +81,8 @@ const copy = {
       "Current drones cover a few kilometres and fly for a few minutes. The M2 is a fixed-wing UAV that covers hundreds of kilometres in a single mission, fully autonomously. Pipelines, borders, coastlines, farmland: monitored for hours, not minutes.",
     ctaPrimary: "Get in Touch",
     ctaSecondary: "Technical Specs",
+    model3dTitle: "Interactive 3D model",
+    model3dDesc: "Rotate, zoom and inspect the aircraft from any angle, right in your browser.",
     problemTitle: "The problem of ",
     problemHighlight: "limited coverage",
     problemSubtitle: "Multi-rotor drones are not built to cover large areas.",
@@ -200,13 +205,14 @@ export default function M2Page({ params }: { params: { locale: string } }) {
         </ScrollReveal>
       </section>
 
-      {/* Product Image Placeholder */}
-      <section className="section-container py-8">
-        <div className="aspect-[2/1] bg-navy-light rounded-2xl border border-white/5 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <p className="text-muted text-sm">SashaDrone M2 Product Image</p>
-          </div>
+      {/* Interactive 3D model */}
+      <section className="section-container py-12">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">{c.model3dTitle}</h2>
+          <p className="text-muted max-w-xl mx-auto">{c.model3dDesc}</p>
+        </div>
+        <div className="max-w-4xl mx-auto">
+          <ModelViewer src="/models/m2sc.glb" alt="SashaDrone M2 3D model" />
         </div>
       </section>
 
