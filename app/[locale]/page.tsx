@@ -1,219 +1,403 @@
-import Link from "next/link";
-import { getDictionary } from "../i18n/getDictionary";
-import type { Locale } from "../i18n/locales";
-import HeroSection from "../components/HeroSection";
-import FeatureCard from "../components/FeatureCard";
-import NewsletterSignup from "../components/NewsletterSignup";
-import ScrollReveal from "../components/ScrollReveal";
+import type { Metadata } from "next";
+import { locales } from "../i18n/locales";
+import TacticalHero from "../components/TacticalHero";
+import BentoEcosystem from "../components/BentoEcosystem";
+import PillarBar from "../components/PillarBar";
+import GlassesDroneCockpit from "../components/GlassesDroneCockpit";
+import ComplianceMarquee from "../components/ComplianceMarquee";
+import PartnersInvestorsCTA from "../components/PartnersInvestorsCTA";
 
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
-export default async function Home({ params }: { params: { locale: string } }) {
-  const locale = params.locale as Locale;
-  const dict = await getDictionary(locale);
-  const prefix = `/${locale}`;
-
-  const features = [
-    { icon: "🔇", title: dict.features.silent.title, description: dict.features.silent.desc },
-    { icon: "👁️", title: dict.features.thermal.title, description: dict.features.thermal.desc },
-    { icon: "🔋", title: dict.features.watch.title, description: dict.features.watch.desc },
-    { icon: "✋", title: dict.features.portable.title, description: dict.features.portable.desc },
-  ];
-
-  const mainProductSlugs = ["drone", "glasses", "platform", "m2"] as const;
-  const mainProducts = mainProductSlugs.map((slug) => ({
-    slug,
-    name: dict.ecosystem[slug].name,
-    tagline: dict.ecosystem[slug].tagline,
-    description: dict.ecosystem[slug].description,
-    specs: dict.ecosystem[slug].specs,
-  }));
-  const secondaryProductSlugs = ["fleet", "cloud"] as const;
-  const secondaryProducts = secondaryProductSlugs.map((slug) => ({
-    slug,
-    name: dict.ecosystem[slug].name,
-    tagline: dict.ecosystem[slug].tagline,
-    description: dict.ecosystem[slug].description,
-    specs: dict.ecosystem[slug].specs,
-  }));
-
-  const profileGroups = [
-    {
-      category: dict.profiles.categories.civilian,
+// ──────────────────────────────────────────────────────────────────
+// COPY (it/en) — aligned to the "Sovereign integrated platform"
+// narrative (LinkedIn portfolio deck, June 2026). Civil framing.
+// ──────────────────────────────────────────────────────────────────
+const COPY = {
+  it: {
+    nav: {
       items: [
-        dict.profiles.general,
-        dict.profiles.tourOperator,
-        dict.profiles.touristGuide,
-        dict.profiles.sales,
-        dict.profiles.logistics,
+        { label: "Capacità", href: "/it/technology" },
+        { label: "Velivoli", href: "/it/products/m2" },
+        { label: "Glasses", href: "/it/products/glasses" },
+        { label: "Platform", href: "/it/products/platform" },
+        { label: "Sicurezza", href: "/security" },
+        { label: "Azienda", href: "/it/about" },
+      ],
+      cta: "Diventa partner",
+    },
+    hero: {
+      badge: "Deep-tech europea  ·  Cerchiamo partner e investitori",
+      title: "Intelligenza sovrana. Nelle tue mani.",
+      subtitle: "Velivoli autonomi (UAV), IA sovrana e un cloud europeo sicuro — un'unica piattaforma integrata.",
+      body:
+        "Infrastrutture critiche, sicurezza e dati dipendono sempre più da tecnologie che gli Stati non controllano più. Costruiamo le fondamenta sovrane per cambiarlo — pensate per proteggere ciò che conta.",
+      ctaPrimary: { label: "Diventa partner o investitore", href: "/it/contact" },
+      ctaSecondary: { label: "Esplora la piattaforma", href: "/it/technology" },
+      chips: [
+        { label: "Per progetto", value: "Sovrana" },
+        { label: "Bio-navigazione", value: "Senza GPS" },
+        { label: "Intelligenza a bordo", value: "Edge AI" },
+        { label: "Normativa UE", value: "NIS2" },
       ],
     },
-    {
-      category: dict.profiles.categories.govSecurity,
+    ecosystem: {
+      eyebrow: "CAPACITÀ · UN'UNICA PIATTAFORMA INTEGRATA",
+      heading: "Una piattaforma. Per proteggere ciò che conta.",
+      body:
+        "Intelligenza che comprende, un'autonomia che impara, sistemi che agiscono — coordinati end-to-end, e sempre sotto il tuo comando.",
       items: [
-        dict.profiles.lawEnforcement,
-        dict.profiles.fieldOperator,
-        dict.profiles.securityAgent,
-        dict.profiles.compliance,
-        dict.profiles.emergencyResponder,
+        {
+          badge: "CAPACITÀ 01",
+          title: "Intelligenza che comprende",
+          description:
+            "Un nucleo cognitivo che percepisce, ragiona e assiste — in ogni missione, in ogni lingua.",
+          href: "/it/products/platform",
+          className: "md:col-span-3 lg:col-span-4 row-span-2",
+        },
+        {
+          badge: "CAPACITÀ 02",
+          title: "Un'autonomia che impara",
+          description:
+            "Il nostro autopilota tattico si addestra contro sé stesso in simulazione — affinando il giudizio in migliaia di missioni prima ancora di volare.",
+          href: "/it/technology",
+          className: "md:col-span-3 lg:col-span-2 row-span-2",
+        },
+        {
+          badge: "CAPACITÀ 04",
+          title: "Sistemi che agiscono",
+          description:
+            "Velivoli autonomi (UAV) per ispezione, sorveglianza, monitoraggio ambientale, sicurezza pubblica e risposta alle emergenze.",
+          href: "/it/products/m2",
+          className: "md:col-span-3 lg:col-span-3",
+        },
+        {
+          badge: "CAPACITÀ 05",
+          title: "Modulare per progetto",
+          description:
+            "Una piattaforma, ogni missione. Riconfigurata in minuti, non in mesi — si cambia il payload, non il velivolo.",
+          href: "/it/products/m2",
+          className: "md:col-span-3 lg:col-span-3",
+        },
+        {
+          badge: "CAPACITÀ 06",
+          title: "Navigazione ispirata alla natura",
+          description:
+            "Quando il GPS è disturbato o negato, i nostri sistemi non perdono la rotta — col cielo, con la memoria, con l'istinto.",
+          href: "/it/technology",
+          className: "md:col-span-3 lg:col-span-3",
+        },
+        {
+          badge: "CAPACITÀ 07",
+          title: "Intelligenza sul campo",
+          description:
+            "La conoscenza consegnata all'operatore sul campo — a mani libere, connesso, consapevole.",
+          href: "/it/products/glasses",
+          className: "md:col-span-3 lg:col-span-3",
+        },
       ],
     },
-    {
-      category: dict.profiles.categories.defense,
-      items: [dict.profiles.military],
+    cockpit: {
+      eyebrow: "CAPACITÀ 03 · IL COMANDO RESTA TUO",
+      heading: "Autonomia piena. Controllo totale. Sempre una tua scelta.",
+      body: [
+        "Autonomia piena quando la missione lo consente — e controllo immersivo in prima persona nell'istante in cui lo vuoi.",
+        "Supervisione totale su ogni asset, con la possibilità di riprendere il comando in qualsiasi momento. Ogni azione è tracciata; le decisioni che contano restano umane.",
+        "Il sistema propone. Tu decidi.",
+      ],
+      tags: [
+        { label: "Comando", value: "Operatore" },
+        { label: "Controllo", value: "FPV + autonomia" },
+        { label: "Supervisione", value: "Totale, real-time" },
+        { label: "Audit", value: "Tamper-evident" },
+      ],
+      cta: { label: "Come funziona", href: "/it/technology" },
     },
-  ];
+    pillars: {
+      eyebrow: "CAPACITÀ 08 · INFRASTRUTTURA E SICUREZZA SOVRANE",
+      heading: "Sicura e resiliente — per progetto.",
+      items: [
+        {
+          code: "S-01",
+          title: "Sovrana per progetto",
+          description:
+            "Cloud e piattaforma proprietari — nessuna chiave straniera. Chiavi crittografiche radicate in hardware (secure element / HSM).",
+        },
+        {
+          code: "S-02",
+          title: "Cifrata end-to-end",
+          description:
+            "Cifratura post-quantum-ready. Audit tamper-evident, secure boot e aggiornamenti OTA firmati.",
+        },
+        {
+          code: "S-03",
+          title: "Fault-tolerant e resiliente",
+          description:
+            "Architettura ad alta disponibilità. Zeroizzazione e wipe remoto in caso di compromissione.",
+        },
+        {
+          code: "S-04",
+          title: "Accesso fidato",
+          description:
+            "Autenticazione continua (voiceprint, AAL3), controllo two-man, threat-model DO-326A.",
+        },
+      ],
+    },
+    compliance: {
+      eyebrow: "AFFIDABILE PER PROGETTO · PROGETTATA PER LE NORMATIVE EUROPEE",
+      items: [
+        "EASA",
+        "GDPR",
+        "NIS2",
+        "AI Act UE",
+        "DO-326A",
+        "Cyber Resilience Act",
+        "IHL · ICRC",
+        "Progettata e prodotta in Europa",
+      ],
+    },
+    ask: {
+      eyebrow: "COSA CERCHIAMO",
+      heading: "Per ora non vendiamo droni. Cerchiamo chi vuole costruire tutto questo con noi.",
+      body:
+        "Stiamo costruendo verso il primo volo e la validazione sul campo. Se vuoi contribuire all'autonomia sovrana europea, parliamone.",
+      points: [
+        "Partner strategici e industriali",
+        "Investitori — verso il Series A",
+        "Clienti pilota nelle infrastrutture critiche",
+      ],
+      ctaPrimary: { label: "Contattaci", href: "/it/contact" },
+      ctaSecondary: { label: "Scopri la piattaforma", href: "/it/technology" },
+      kicker: "La tecnologia propone. Le persone decidono.",
+    },
+  },
+  // ──────────────────────────────────────────────────────────────
+  en: {
+    nav: {
+      items: [
+        { label: "Capabilities", href: "/en/technology" },
+        { label: "Aircraft", href: "/en/products/m2" },
+        { label: "Glasses", href: "/en/products/glasses" },
+        { label: "Platform", href: "/en/products/platform" },
+        { label: "Security", href: "/security" },
+        { label: "Company", href: "/en/about" },
+      ],
+      cta: "Partner with us",
+    },
+    hero: {
+      badge: "European deep-tech  ·  Seeking partners & investors",
+      title: "Sovereign intelligence. In your hands.",
+      subtitle: "Autonomous aircraft (UAV), sovereign AI and a secure European cloud — one integrated platform.",
+      body:
+        "Critical infrastructure, security and data increasingly depend on technologies that nations no longer control. We build the sovereign foundation to change that — designed to protect what matters.",
+      ctaPrimary: { label: "Become a partner or investor", href: "/en/contact" },
+      ctaSecondary: { label: "Explore the platform", href: "/en/technology" },
+      chips: [
+        { label: "By design", value: "Sovereign" },
+        { label: "Bio-navigation", value: "GPS-free" },
+        { label: "On-device intelligence", value: "Edge AI" },
+        { label: "EU regulation", value: "NIS2" },
+      ],
+    },
+    ecosystem: {
+      eyebrow: "CAPABILITIES · ONE INTEGRATED PLATFORM",
+      heading: "One platform. Built to protect what matters.",
+      body:
+        "Intelligence that understands, an autonomy that learns, systems that act — coordinated end to end, and always under your command.",
+      items: [
+        {
+          badge: "CAPABILITY 01",
+          title: "Intelligence that understands",
+          description:
+            "A cognitive core that perceives, reasons and assists — across every mission, in every language.",
+          href: "/en/products/platform",
+          className: "md:col-span-3 lg:col-span-4 row-span-2",
+        },
+        {
+          badge: "CAPABILITY 02",
+          title: "An autonomy that learns",
+          description:
+            "Our tactical autopilot trains against itself in simulation — sharpening judgement across thousands of missions before ever flying.",
+          href: "/en/technology",
+          className: "md:col-span-3 lg:col-span-2 row-span-2",
+        },
+        {
+          badge: "CAPABILITY 04",
+          title: "Systems that act",
+          description:
+            "Autonomous aircraft (UAV) for inspection, surveillance, environmental monitoring, public safety and emergency response.",
+          href: "/en/products/m2",
+          className: "md:col-span-3 lg:col-span-3",
+        },
+        {
+          badge: "CAPABILITY 05",
+          title: "Modular by design",
+          description:
+            "One platform, every mission. Reconfigured in minutes, not months — change the payload, not the aircraft.",
+          href: "/en/products/m2",
+          className: "md:col-span-3 lg:col-span-3",
+        },
+        {
+          badge: "CAPABILITY 06",
+          title: "Navigation inspired by nature",
+          description:
+            "When GPS is jammed or denied, our systems hold course — by the sky, by memory, by instinct.",
+          href: "/en/technology",
+          className: "md:col-span-3 lg:col-span-3",
+        },
+        {
+          badge: "CAPABILITY 07",
+          title: "Intelligence at the edge",
+          description:
+            "Knowledge delivered to the operator in the field — hands-free, connected, aware.",
+          href: "/en/products/glasses",
+          className: "md:col-span-3 lg:col-span-3",
+        },
+      ],
+    },
+    cockpit: {
+      eyebrow: "CAPABILITY 03 · YOU STAY IN COMMAND",
+      heading: "Full autonomy. Total control. Always your call.",
+      body: [
+        "Full autonomy when the mission allows — and immersive first-person control the instant you want it.",
+        "Total supervision over every asset, with the ability to take the stick at any moment. Every action is logged; the decisions that matter stay human.",
+        "The system proposes. You decide.",
+      ],
+      tags: [
+        { label: "Command", value: "Operator-led" },
+        { label: "Control", value: "FPV + autonomy" },
+        { label: "Oversight", value: "Full, real-time" },
+        { label: "Audit", value: "Tamper-evident" },
+      ],
+      cta: { label: "How it works", href: "/en/technology" },
+    },
+    pillars: {
+      eyebrow: "CAPABILITY 08 · SOVEREIGN INFRASTRUCTURE & SECURITY",
+      heading: "Secure and resilient — by design.",
+      items: [
+        {
+          code: "S-01",
+          title: "Sovereign by design",
+          description:
+            "Your cloud and platform — no foreign key. Cryptographic keys rooted in hardware (secure element / HSM).",
+        },
+        {
+          code: "S-02",
+          title: "Encrypted, end to end",
+          description:
+            "Post-quantum-ready encryption. Tamper-evident audit, secure boot and signed OTA updates.",
+        },
+        {
+          code: "S-03",
+          title: "Fault-tolerant & resilient",
+          description:
+            "High-availability architecture. Zeroization and remote wipe on compromise.",
+        },
+        {
+          code: "S-04",
+          title: "Trusted access",
+          description:
+            "Continuous authentication (voiceprint, AAL3), two-man control, threat-modelled to DO-326A.",
+        },
+      ],
+    },
+    compliance: {
+      eyebrow: "TRUSTED BY DESIGN · ENGINEERED TO EUROPEAN REGULATION",
+      items: [
+        "EASA",
+        "GDPR",
+        "NIS2",
+        "EU AI Act",
+        "DO-326A",
+        "Cyber Resilience Act",
+        "IHL · ICRC",
+        "Designed & built in Europe",
+      ],
+    },
+    ask: {
+      eyebrow: "WHAT WE'RE LOOKING FOR",
+      heading: "We're not selling drones yet. We're looking for the people who'll build this with us.",
+      body:
+        "We're building toward first flight and field validation. If you want to help build sovereign autonomy in Europe, let's talk.",
+      points: [
+        "Strategic & industrial partners",
+        "Investors — toward Series A",
+        "Pilot customers in critical infrastructure",
+      ],
+      ctaPrimary: { label: "Get in touch", href: "/en/contact" },
+      ctaSecondary: { label: "See the platform", href: "/en/technology" },
+      kicker: "Technology proposes. People decide.",
+    },
+  },
+} as const;
+
+
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const isIt = params.locale === "it";
+  return {
+    title: isIt
+      ? "SashaTech · Autonomia sovrana — UAV, IA e cloud sicuro"
+      : "SashaTech · Sovereign autonomy — UAV, AI & secure cloud",
+    description: isIt
+      ? "Un'unica piattaforma europea integrata: velivoli autonomi (UAV), IA sovrana e cloud sicuro. Cerchiamo partner e investitori verso il Series A."
+      : "One integrated European platform: autonomous aircraft (UAV), sovereign AI and a secure cloud. Seeking partners and investors toward Series A.",
+  };
+}
+
+
+export default function HomePage({ params }: { params: { locale: string } }) {
+  const locale = (params.locale === "en" ? "en" : "it") as keyof typeof COPY;
+  const c = COPY[locale];
 
   return (
     <>
-      {/* Hero */}
-      <HeroSection
-        badge={dict.hero.badge}
-        title={dict.hero.title}
-        subtitle={dict.hero.subtitle}
-        description={dict.hero.description}
-        ctaText={dict.hero.ctaOrder}
-        ctaHref={`${prefix}/contact`}
-        secondaryCta={{ text: dict.hero.ctaTech, href: `${prefix}/technology` }}
+      <TacticalHero
+        flagshipBadge={c.hero.badge}
+        title={c.hero.title}
+        subtitle={c.hero.subtitle}
+        body={c.hero.body}
+        ctaPrimary={c.hero.ctaPrimary}
+        ctaSecondary={c.hero.ctaSecondary}
+        chips={[...c.hero.chips]}
       />
 
-      {/* Video Placeholder */}
-      <ScrollReveal animation="scale-in">
-        <section className="section-container py-16">
-          <div className="relative aspect-video rounded-2xl overflow-hidden bg-navy-light border border-white/5">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4 hover:bg-gold/30 hover:scale-110 transition-all duration-300 cursor-pointer">
-                  <svg className="w-8 h-8 text-gold ml-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-                <p className="text-muted text-sm">{dict.video.cta}</p>
-              </div>
-            </div>
-            <div className="absolute inset-0 opacity-5">
-              <div className="w-full h-full"
-                style={{
-                  backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-                  backgroundSize: "40px 40px",
-                }}
-              />
-            </div>
-          </div>
-        </section>
-      </ScrollReveal>
+      <BentoEcosystem
+        eyebrow={c.ecosystem.eyebrow}
+        heading={c.ecosystem.heading}
+        body={c.ecosystem.body}
+        items={[...c.ecosystem.items]}
+      />
 
-      {/* Features */}
-      <section className="section-container py-16">
-        <ScrollReveal animation="fade-up">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {dict.features.title}<span className="gradient-text">{dict.features.titleHighlight}</span>
-            </h2>
-            <p className="text-muted max-w-xl mx-auto">
-              {dict.features.subtitle}
-            </p>
-          </div>
-        </ScrollReveal>
-        <ScrollReveal animation="fade-up" stagger={0.15} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {features.map((f) => (
-            <FeatureCard key={f.title} {...f} />
-          ))}
-        </ScrollReveal>
-      </section>
+      <GlassesDroneCockpit
+        eyebrow={c.cockpit.eyebrow}
+        heading={c.cockpit.heading}
+        body={[...c.cockpit.body]}
+        tags={[...c.cockpit.tags]}
+        cta={c.cockpit.cta}
+      />
 
-      {/* Ecosystem */}
-      <section className="section-container py-16">
-        <ScrollReveal animation="fade-up">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {dict.ecosystem.title}<span className="gradient-text">{dict.ecosystem.titleHighlight}</span>
-            </h2>
-            <p className="text-muted max-w-xl mx-auto">
-              {dict.ecosystem.subtitle}
-            </p>
-          </div>
-        </ScrollReveal>
-        <ScrollReveal animation="fade-up" stagger={0.2} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {mainProducts.map((p) => (
-            <div key={p.slug} className="glass-card flex flex-col justify-between group hover:border-gold/20 transition-all duration-300">
-              <div className="aspect-[4/3] bg-navy rounded-xl mb-5 overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent group-hover:from-gold/10 transition-all duration-500" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-1">{p.name}</h3>
-                <p className="text-gold text-sm font-medium mb-3">{p.tagline}</p>
-                <p className="text-muted text-sm leading-relaxed mb-4">{p.description}</p>
-                <p className="font-mono text-xs text-muted/60">{p.specs}</p>
-              </div>
-            </div>
-          ))}
-        </ScrollReveal>
-        <ScrollReveal animation="fade-up" stagger={0.15} className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          {secondaryProducts.map((p) => (
-            <div key={p.slug} className="glass-card flex flex-row items-start gap-5 group hover:border-gold/20 transition-all duration-300">
-              <div className="w-16 h-16 bg-navy rounded-xl flex-shrink-0 overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/10 to-transparent" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold mb-1">{p.name}</h3>
-                <p className="text-gold text-xs font-medium mb-2">{p.tagline}</p>
-                <p className="text-muted text-sm leading-relaxed">{p.description}</p>
-              </div>
-            </div>
-          ))}
-        </ScrollReveal>
-      </section>
+      <PillarBar
+        eyebrow={c.pillars.eyebrow}
+        heading={c.pillars.heading}
+        pillars={[...c.pillars.items]}
+      />
 
-      {/* Professional Profiles */}
-      <section className="section-container py-16">
-        <ScrollReveal animation="fade-up">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {dict.profiles.title}<span className="gradient-text">{dict.profiles.titleHighlight}</span>
-            </h2>
-            <p className="text-muted max-w-xl mx-auto">
-              {dict.profiles.subtitle}
-            </p>
-          </div>
-        </ScrollReveal>
-        <ScrollReveal animation="fade-up" stagger={0.1} className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {profileGroups.map((group) => (
-            <div key={group.category}>
-              <h3 className="text-sm uppercase tracking-widest text-gold mb-4 font-semibold">{group.category}</h3>
-              <div className="space-y-3">
-                {group.items.map((profile) => (
-                  <div key={profile.name} className="glass-card !p-4 hover:border-gold/20 transition-all duration-300">
-                    <h4 className="font-semibold text-sm mb-1">{profile.name}</h4>
-                    <p className="text-muted text-xs leading-relaxed">{profile.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </ScrollReveal>
-      </section>
+      <ComplianceMarquee
+        eyebrow={c.compliance.eyebrow}
+        items={[...c.compliance.items]}
+      />
 
-      {/* EU Manufacturing Banner */}
-      <section className="section-container py-16">
-        <p className="text-center text-sm text-muted/60">
-          {locale === "it" ? "Progettato e prodotto in Europa" : "Designed and manufactured in Europe"}
-        </p>
-      </section>
-
-      {/* Newsletter */}
-      <ScrollReveal animation="fade-up">
-        <section className="section-container py-20">
-          <div className="glass-card text-center py-12 px-6 hover:border-gold/20 transition-all duration-500">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">
-              {dict.newsletter.title}
-            </h2>
-            <p className="text-muted mb-8 max-w-md mx-auto">
-              {dict.newsletter.subtitle}
-            </p>
-            <NewsletterSignup />
-          </div>
-        </section>
-      </ScrollReveal>
+      <PartnersInvestorsCTA
+        eyebrow={c.ask.eyebrow}
+        heading={c.ask.heading}
+        body={c.ask.body}
+        points={[...c.ask.points]}
+        ctaPrimary={c.ask.ctaPrimary}
+        ctaSecondary={c.ask.ctaSecondary}
+        kicker={c.ask.kicker}
+      />
     </>
   );
 }

@@ -66,32 +66,60 @@ const capabilities = [
     benefits_en: ["No launch equipment", "Ready in seconds", "Take it anywhere"],
   },
   {
-    id: "all-day",
+    id: "endurance",
     icon: "🔋",
-    title_it: "Autonomia per Tutto il Giorno",
-    title_en: "All-Day Autonomy",
-    subtitle_it: "Non ti lascia mai a piedi",
-    subtitle_en: "Never leaves you stranded",
+    title_it: "Oltre 6 Ore di Autonomia",
+    title_en: "6+ Hours of Endurance",
+    subtitle_it: "Endurance da missione di ispezione",
+    subtitle_en: "Endurance for full inspection missions",
     description_it:
-      "Sorveglia per giorni in modalità stazionaria, o vola per oltre un'ora in missione attiva. Con una singola carica hai tutta l'autonomia che serve per completare il lavoro.",
+      "Una singola sortita copre oltre 6 ore di volo in ispezione: corridoi lunghi e aree estese coperti senza rientrare. Più tempo sull'obiettivo, meno cambi batteria, meno interruzioni operative.",
     description_en:
-      "Surveys for days in stationary mode, or flies for over an hour on active missions. On a single charge, you have all the autonomy you need to get the job done.",
-    benefits_it: ["Giorni di sorveglianza passiva", "Ore di volo attivo", "Batterie europee ad alta densità"],
-    benefits_en: ["Days of passive surveillance", "Hours of active flight", "High-density European batteries"],
+      "A single sortie covers more than 6 hours of inspection flight: long corridors and wide areas surveyed without returning. More time on target, fewer battery swaps, fewer operational interruptions.",
+    benefits_it: ["Oltre 6 h di endurance in ispezione", "Corridoi lunghi senza rientro", "Batterie europee ad alta densità"],
+    benefits_en: ["6+ h endurance on inspection missions", "Long corridors without returning", "High-density European batteries"],
   },
   {
-    id: "secure",
+    id: "nav-by-nature",
+    icon: "🧭",
+    title_it: "Navigazione Ispirata alla Natura",
+    title_en: "Navigation Inspired by Nature",
+    subtitle_it: "Mantiene la rotta anche senza GPS",
+    subtitle_en: "Holds course even without GPS",
+    description_it:
+      "Quando il GPS è disturbato o negato, i nostri sistemi non perdono la rotta: si orientano con la luce del cielo, con la memoria visiva del percorso e con la navigazione inerziale — come fanno gli insetti e gli uccelli migratori.",
+    description_en:
+      "When GPS is jammed or denied, our systems hold course: they orient by skylight, by visual memory of the route, and by inertial navigation — the way insects and migratory birds do.",
+    benefits_it: ["Resistente a jamming e spoofing", "Bussola celeste + memoria visiva", "Ritorno a casa autonomo"],
+    benefits_en: ["Resistant to jamming and spoofing", "Sky compass + visual memory", "Autonomous return-to-home"],
+  },
+  {
+    id: "edge-ai",
+    icon: "🧠",
+    title_it: "Intelligenza a Bordo",
+    title_en: "Intelligence at the Edge",
+    subtitle_it: "Elabora dove serve, senza dipendere dal cloud",
+    subtitle_en: "Processes where it matters, without depending on the cloud",
+    description_it:
+      "Percezione, ragionamento e assistenza vengono elaborati direttamente a bordo e sul campo. L'operatore riceve le informazioni giuste nel momento decisivo — a mani libere, connesso, consapevole — anche offline.",
+    description_en:
+      "Perception, reasoning and assistance run directly on-device and in the field. The operator gets the right information at the decisive moment — hands-free, connected, aware — even offline.",
+    benefits_it: ["Inferenza AI a bordo", "Funziona anche offline", "Informazioni in tempo reale all'operatore"],
+    benefits_en: ["On-device AI inference", "Works even offline", "Real-time information to the operator"],
+  },
+  {
+    id: "sovereign-secure",
     icon: "🔒",
-    title_it: "Comunicazioni Sicure",
-    title_en: "Secure Communications",
+    title_it: "Sovrana e Sicura, per Progetto",
+    title_en: "Sovereign & Secure, by Design",
     subtitle_it: "I tuoi dati restano tuoi",
     subtitle_en: "Your data stays yours",
     description_it:
-      "Tutte le comunicazioni tra drone, occhiali e smartphone sono crittografate. Nessun dato viene inviato a server esterni senza il tuo consenso. Privacy e sicurezza sono integrate nel design.",
+      "Cloud e piattaforma proprietari, senza chiavi straniere. Chiavi crittografiche radicate in hardware, cifratura end-to-end, audit tamper-evident e autenticazione continua. Sicurezza e resilienza sono integrate nel design — non aggiunte dopo.",
     description_en:
-      "All communications between drone, glasses, and smartphone are encrypted. Your data is handled according to our Privacy Policy. Privacy and security are built into the design.",
-    benefits_it: ["Crittografia end-to-end", "Nessun server esterno", "Conforme al GDPR"],
-    benefits_en: ["End-to-end encryption", "No external servers", "GDPR compliant"],
+      "Proprietary cloud and platform, with no foreign key. Hardware-rooted cryptographic keys, end-to-end encryption, tamper-evident audit and continuous authentication. Security and resilience are built into the design — not bolted on later.",
+    benefits_it: ["Chiavi in hardware (secure element / HSM)", "Cifratura end-to-end, post-quantum-ready", "Conforme a GDPR e NIS2"],
+    benefits_en: ["Hardware-rooted keys (secure element / HSM)", "End-to-end, post-quantum-ready encryption", "GDPR and NIS2 compliant"],
   },
 ];
 

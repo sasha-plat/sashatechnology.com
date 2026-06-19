@@ -1,0 +1,14 @@
+# SashaTech S.r.l. — Coordinated Vulnerability Disclosure
+# RFC 9116 security.txt
+# Doc ID: ST-CVD-POL-001 v1.0
+# Effective: 2026-05-16
+
+Contact: mailto:security@sashatech.ai
+Contact: https://sashatech.ai/security/report
+Expires: 2027-05-16T23:59:59Z
+Encryption: https://sashatech.ai/.well-known/security-pgp.asc
+Preferred-Languages: it, en
+Canonical: https://sashatech.ai/.well-known/security.txt
+Policy: https://sashatech.ai/security/cvd-policy
+Acknowledgments: https://sashatech.ai/security/hall-of-fame
+Hiring: https://sashatech.ai/careers
