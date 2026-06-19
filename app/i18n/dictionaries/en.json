@@ -62,7 +62,7 @@
       "name": "SashaDrone M2",
       "tagline": "Long-range coverage, zero compromise",
       "description": "A fixed-wing drone that covers hundreds of kilometres on a single mission. Monitors pipelines, borders, coastlines, and farmland autonomously for hours.",
-      "specs": "4 sizes | Hydrogen fuel cell | Hours of flight"
+      "specs": "4 sizes | Battery-electric | Hours of flight"
     },
     "fleet": {
       "name": "SashaFleet",

@@ -29,7 +29,7 @@ const droneProducts: ProductItem[] = [
   { slug: "agri", name: "B1 Scout — Agri", hasPage: true },
   { slug: "cine", name: "B1 Scout — Cine", hasPage: true },
   { slug: "b2", name: "B2 Platform", hasPage: false },
-  { slug: "m2", name: "M2 Lambda Wing", hasPage: true },
+  { slug: "m2", name: "M2 Long-Range", hasPage: true },
 ];
 
 const glassesProducts: ProductItem[] = [

@@ -62,7 +62,7 @@
       "name": "SashaDrone M2",
       "tagline": "Copertura a lungo raggio, zero compromessi",
       "description": "Un drone ad ala fissa che copre centinaia di chilometri in una singola missione. Monitora oleodotti, confini, coste e terreni agricoli in autonomia per ore.",
-      "specs": "4 taglie | Cella a idrogeno | Ore di volo"
+      "specs": "4 taglie | Elettrico a batteria | Ore di volo"
     },
     "fleet": {
       "name": "SashaFleet",

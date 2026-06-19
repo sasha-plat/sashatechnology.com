@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     "Deep-tech European company building autonomous long-endurance UAVs (SashaDrone M2 family), nano-drones (B1/B2) and binocular AR glasses (SashaGlasses) for civil, public-safety and defense operators.",
   keywords: [
     "SashaTech", "SashaDrone M2", "M2-M flagship",
-    "autonomous drone", "long endurance UAV", "lambda wing",
-    "hydrogen fuel cell drone", "AR glasses drone control",
+    "autonomous drone", "long endurance UAV", "fixed-wing UAV",
+    "battery-electric drone", "AR glasses drone control",
     "SashaGlasses", "biomimetic drone", "HIVE swarm",
     "DAL-A drone", "tactical AR", "EU defense tech",
   ],
